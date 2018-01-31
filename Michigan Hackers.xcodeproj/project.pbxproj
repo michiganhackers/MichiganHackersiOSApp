@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DB747BD2201AB36300F67C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB747BD1201AB36300F67C86 /* AppDelegate.swift */; };
 		DB747BD4201AB36300F67C86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB747BD3201AB36300F67C86 /* ViewController.swift */; };
-		DB747BD7201AB36300F67C86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB747BD5201AB36300F67C86 /* Main.storyboard */; };
 		DB747BD9201AB36300F67C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB747BD8201AB36300F67C86 /* Assets.xcassets */; };
 		DB747BDC201AB36300F67C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB747BDA201AB36300F67C86 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		DB747BCE201AB36300F67C86 /* Michigan Hackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Michigan Hackers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB747BD1201AB36300F67C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB747BD3201AB36300F67C86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB747BD6201AB36300F67C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB747BD8201AB36300F67C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB747BDB201AB36300F67C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB747BDD201AB36300F67C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			children = (
 				DB747BD1201AB36300F67C86 /* AppDelegate.swift */,
 				DB747BD3201AB36300F67C86 /* ViewController.swift */,
-				DB747BD5201AB36300F67C86 /* Main.storyboard */,
 				DB747BD8201AB36300F67C86 /* Assets.xcassets */,
 				DB747BDA201AB36300F67C86 /* LaunchScreen.storyboard */,
 				DB747BDD201AB36300F67C86 /* Info.plist */,
@@ -125,7 +122,6 @@
 			files = (
 				DB747BDC201AB36300F67C86 /* LaunchScreen.storyboard in Resources */,
 				DB747BD9201AB36300F67C86 /* Assets.xcassets in Resources */,
-				DB747BD7201AB36300F67C86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,14 +140,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DB747BD5201AB36300F67C86 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB747BD6201AB36300F67C86 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB747BDA201AB36300F67C86 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -277,6 +265,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9F774JFK34;
 				INFOPLIST_FILE = "Michigan Hackers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.connorsvrcek.Michigan-Hackers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -292,6 +281,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9F774JFK34;
 				INFOPLIST_FILE = "Michigan Hackers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.connorsvrcek.Michigan-Hackers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
