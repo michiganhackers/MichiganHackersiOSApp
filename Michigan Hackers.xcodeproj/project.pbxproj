@@ -11,6 +11,8 @@
 		DB747BD4201AB36300F67C86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB747BD3201AB36300F67C86 /* ViewController.swift */; };
 		DB747BD9201AB36300F67C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB747BD8201AB36300F67C86 /* Assets.xcassets */; };
 		DB747BDC201AB36300F67C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB747BDA201AB36300F67C86 /* LaunchScreen.storyboard */; };
+		DBFF347C2023F1490020B7AA /* logo_square.png in Resources */ = {isa = PBXBuildFile; fileRef = DBFF347B2023F1490020B7AA /* logo_square.png */; };
+		DBFF347E2023F3F20020B7AA /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF347D2023F3F20020B7AA /* EventController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		DB747BD8201AB36300F67C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB747BDB201AB36300F67C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB747BDD201AB36300F67C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBFF347B2023F1490020B7AA /* logo_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_square.png; sourceTree = "<group>"; };
+		DBFF347D2023F3F20020B7AA /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +58,11 @@
 			children = (
 				DB747BD1201AB36300F67C86 /* AppDelegate.swift */,
 				DB747BD3201AB36300F67C86 /* ViewController.swift */,
+				DBFF347D2023F3F20020B7AA /* EventController.swift */,
 				DB747BD8201AB36300F67C86 /* Assets.xcassets */,
 				DB747BDA201AB36300F67C86 /* LaunchScreen.storyboard */,
 				DB747BDD201AB36300F67C86 /* Info.plist */,
+				DBFF347B2023F1490020B7AA /* logo_square.png */,
 			);
 			path = "Michigan Hackers";
 			sourceTree = "<group>";
@@ -122,6 +128,7 @@
 			files = (
 				DB747BDC201AB36300F67C86 /* LaunchScreen.storyboard in Resources */,
 				DB747BD9201AB36300F67C86 /* Assets.xcassets in Resources */,
+				DBFF347C2023F1490020B7AA /* logo_square.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +141,7 @@
 			files = (
 				DB747BD4201AB36300F67C86 /* ViewController.swift in Sources */,
 				DB747BD2201AB36300F67C86 /* AppDelegate.swift in Sources */,
+				DBFF347E2023F3F20020B7AA /* EventController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

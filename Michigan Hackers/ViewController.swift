@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.view.backgroundColor = #colorLiteral(red: 0.937254902, green: 0.4392156863, blue: 0.08235294118, alpha: 1)
+        super.view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
     }
 
