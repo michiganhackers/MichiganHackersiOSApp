@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IGListKit
 
 class EventController: UIViewController {
     override func viewDidLoad() {
