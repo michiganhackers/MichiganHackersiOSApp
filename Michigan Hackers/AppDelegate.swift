@@ -15,11 +15,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        guard let window: UIWindow = self.window else {fatalError("no window")}
-        window.rootViewController = ViewController()
-        window.makeKeyAndVisible()
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let tabBarController = UITabBarController()
+        window?.rootViewController = tabBarController
+        window?.backgroundColor = #colorLiteral(red: 0.9450980392, green: 0.3647058824, blue: 0.1411764706, alpha: 1)
+        
+        // Make the tab bar
+        let events = EventController()
+        events.tabBarItem = UITabBarItem(title: "Events", image: #imageLiteral(resourceName: "icons8-reminder-50"), tag: 0)
+        
+        let calendar = CalendarController()
+        calendar.tabBarItem = UITabBarItem(title: "Calendar", image: #imageLiteral(resourceName: "icons8-calendar-50"), tag: 1)
+        
+        let notifications = NotificationController()
+        notifications.tabBarItem = UITabBarItem(title: "Notifications", image: #imageLiteral(resourceName: "icons8-alarm-50"), tag: 2)
+        
+        let resources = Resources()
+        resources.tabBarItem = UITabBarItem(title: "Resources", image: #imageLiteral(resourceName: "icons8-book-50"), tag: 3)
+        
+        let controllers = [events, calendar, notifications, resources]
+        tabBarController.viewControllers = controllers.map {UINavigationController(rootViewController: $0) }
         return true
     }
 

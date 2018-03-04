@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B9CC9B9756492EDE960CE033 /* Pods_Michigan_Hackers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F0D2FACDD711FC9E55948B /* Pods_Michigan_Hackers.framework */; };
+		DB459C8E203F9673007A4D89 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB459C8D203F9673007A4D89 /* CalendarController.swift */; };
+		DB459C90203F99DD007A4D89 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB459C8F203F99DD007A4D89 /* NotificationController.swift */; };
+		DB459C92203F9BCB007A4D89 /* ResourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB459C91203F9BCB007A4D89 /* ResourcesController.swift */; };
+		DB68654520438E160005233C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68654420438E160005233C /* Event.swift */; };
 		DB747BD2201AB36300F67C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB747BD1201AB36300F67C86 /* AppDelegate.swift */; };
-		DB747BD4201AB36300F67C86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB747BD3201AB36300F67C86 /* ViewController.swift */; };
 		DB747BD9201AB36300F67C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB747BD8201AB36300F67C86 /* Assets.xcassets */; };
 		DB747BDC201AB36300F67C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB747BDA201AB36300F67C86 /* LaunchScreen.storyboard */; };
 		DBFF347C2023F1490020B7AA /* logo_square.png in Resources */ = {isa = PBXBuildFile; fileRef = DBFF347B2023F1490020B7AA /* logo_square.png */; };
@@ -20,9 +23,12 @@
 		91738A33D49BA5335B392FF5 /* Pods-Michigan Hackers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Michigan Hackers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Michigan Hackers/Pods-Michigan Hackers.debug.xcconfig"; sourceTree = "<group>"; };
 		9E75BE18609F638109ABFD78 /* Pods-Michigan Hackers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Michigan Hackers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Michigan Hackers/Pods-Michigan Hackers.release.xcconfig"; sourceTree = "<group>"; };
 		DB0D9E1E2036752300323B67 /* libIGListKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libIGListKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB459C8D203F9673007A4D89 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
+		DB459C8F203F99DD007A4D89 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DB459C91203F9BCB007A4D89 /* ResourcesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesController.swift; sourceTree = "<group>"; };
+		DB68654420438E160005233C /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DB747BCE201AB36300F67C86 /* Michigan Hackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Michigan Hackers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB747BD1201AB36300F67C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB747BD3201AB36300F67C86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB747BD8201AB36300F67C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB747BDB201AB36300F67C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB747BDD201AB36300F67C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,9 +80,19 @@
 			isa = PBXGroup;
 			children = (
 				DBFF347D2023F3F20020B7AA /* EventController.swift */,
-				DB747BD3201AB36300F67C86 /* ViewController.swift */,
+				DB459C8D203F9673007A4D89 /* CalendarController.swift */,
+				DB459C8F203F99DD007A4D89 /* NotificationController.swift */,
+				DB459C91203F9BCB007A4D89 /* ResourcesController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DB68654320438E040005233C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB68654420438E160005233C /* Event.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DB747BC5201AB36300F67C86 = {
@@ -102,6 +118,7 @@
 			children = (
 				DB747BD1201AB36300F67C86 /* AppDelegate.swift */,
 				DB747BDA201AB36300F67C86 /* LaunchScreen.storyboard */,
+				DB68654320438E040005233C /* Models */,
 				DB0D9E1C20366E5400323B67 /* ViewControllers */,
 				DB0D9E1B20366DE000323B67 /* Assets */,
 				DB747BDD201AB36300F67C86 /* Info.plist */,
@@ -238,8 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB747BD4201AB36300F67C86 /* ViewController.swift in Sources */,
+				DB459C90203F99DD007A4D89 /* NotificationController.swift in Sources */,
+				DB459C8E203F9673007A4D89 /* CalendarController.swift in Sources */,
+				DB459C92203F9BCB007A4D89 /* ResourcesController.swift in Sources */,
 				DB747BD2201AB36300F67C86 /* AppDelegate.swift in Sources */,
+				DB68654520438E160005233C /* Event.swift in Sources */,
 				DBFF347E2023F3F20020B7AA /* EventController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
