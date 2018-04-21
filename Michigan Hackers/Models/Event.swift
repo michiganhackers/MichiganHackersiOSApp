@@ -8,11 +8,8 @@
 
 import Foundation
 
-class Event {
-    private var title: String?
-    private var date: String?
-    private var location: String?
-    private var description: String?
-    
-    
+class Event: NSObject {
+    var title: String?
+    var date: String?
+    var location: String?
 }
