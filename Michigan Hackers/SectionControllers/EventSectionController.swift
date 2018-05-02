@@ -10,6 +10,17 @@ import UIKit
 import IGListKit
 
 class EventSectionController: ListSectionController {
+    var event: Event!
+    
+    override init() {
+        super.init()
+        inset = UIEdgeInsets(top: 0, left: 15, bottom: 15, right: 15)
+    }
+    
+    override func numberOfItems() -> Int {
+        return 1
+    }
+    
     override func sizeForItem(at index: Int) -> CGSize {
         guard let context = collectionContext else { return .zero }
         
@@ -17,6 +28,14 @@ class EventSectionController: ListSectionController {
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
-        return collectionContext!.dequeueReusableCell(of: Event.self, for: self, at: index)
+        return collectionContext!.dequeueReusableCell(of: EventCell.self, for: self, at: index)
+    }
+    
+    override func didUpdate(to object: Any) {
+        event = object as? Event
+    }
+    
+    override func didSelectItem(at index: Int) {
+        // TODO: send to google calendar when clicked on?
     }
 }

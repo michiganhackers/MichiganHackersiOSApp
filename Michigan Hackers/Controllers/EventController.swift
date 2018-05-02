@@ -11,7 +11,8 @@ import IGListKit
 import GoogleAPIClientForREST
 import GoogleSignIn
 
-class EventController: UIViewController {
+// Google Calendar/General ViewController stuff
+class EventController: UIViewController, GIDSignInUIDelegate {
     
     private let service = GTLRCalendarService()
     
@@ -19,27 +20,33 @@ class EventController: UIViewController {
     
     private var eventList = [Event]()
     
+    let noEvents = UITextView()
+    
     lazy var adapter: ListAdapter = {
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 0)
     }()
     
     lazy var collectionView: UICollectionView = {
-        let cv = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout())
+        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        let cv = UICollectionView(frame: frame, collectionViewLayout: UICollectionViewFlowLayout())
+        cv.backgroundColor = UIColor.white
         return cv
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Configure Google Sign-in.
-        GIDSignIn.sharedInstance().delegate = self
-        //GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().scopes = scopes
-        GIDSignIn.sharedInstance().signInSilently()
-        
         view.addSubview(collectionView)
         
-        adapter.collectionView = collectionView
+        noEvents.frame = view.bounds
+        noEvents.isEditable = false
+        noEvents.center = CGPoint(x: view.bounds.width / 2, y: 15)
+        noEvents.isHidden = true
+        view.addSubview(noEvents)
+        self.present(SignInController(), animated: true, completion: nil)
+        fetchEvents()
+        
+        adapter.collectionView = self.collectionView
         adapter.dataSource = self
     }
     
@@ -57,6 +64,50 @@ class EventController: UIViewController {
         )
         alert.addAction(ok)
         present(alert, animated: true, completion: nil)
+    }
+    
+//    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+//        if let error = error {
+//            showAlert(title: "Authentication Error", message: error.localizedDescription)
+//            self.service.authorizer = nil
+//        } else {
+//            self.signInButton.isHidden = true
+//            self.noEvents.isHidden = true
+//            self.service.authorizer = user.authentication.fetcherAuthorizer()
+//            fetchEvents()
+//        }
+//    }
+    
+    // Get the list of events from the calendar
+    func fetchEvents() {
+        let query = GTLRCalendarQuery_EventsList.query(withCalendarId: "8n8u58ssric1hmm84jvkvl9d68@group.calendar.google.com")
+        query.maxResults = 10
+        query.timeMin = GTLRDateTime(date: Date())
+        query.singleEvents = true
+        query.orderBy = kGTLRCalendarOrderByStartTime
+        service.executeQuery(query, delegate: self, didFinish: #selector(storeEvents(ticket:finishedWithObject:error:)))
+    }
+    
+    // Store the events to be shown
+    @objc func storeEvents(ticket: GTLRServiceTicket, finishedWithObject response: GTLRCalendar_Events, error: NSError?) {
+        if let error = error {
+            showAlert(title: "Error", message: error.localizedDescription)
+            return
+        }
+        
+        // Get the events, create Event objects and store them in the array
+        if let events = response.items {
+            for event in events {
+                let start = event.start!.dateTime ?? event.start!.date!
+                let eventObj = Event()
+                eventObj.date = DateFormatter.localizedString(from: start.date, dateStyle: .short, timeStyle: .short)
+                eventObj.title = event.summary
+                eventObj.location = event.location
+                eventList.append(eventObj)
+            }
+        } else {
+            noEvents.text = "No upcoming events found."
+        }
     }
 }
 
@@ -78,50 +129,6 @@ extension EventController: ListAdapterDataSource {
 
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
         return nil
-    }
-}
-
-// GoogleCal stuff
-extension EventController: GIDSignInDelegate {
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        
-    }
-    
-    // Get the list of events from the calendar
-    func fetchEvents() {
-        let query = GTLRCalendarQuery_EventsList.query(withCalendarId: "primary")
-        query.maxResults = 10
-        query.timeMin = GTLRDateTime(date: Date())
-        query.singleEvents = true
-        query.orderBy = kGTLRCalendarOrderByStartTime
-        service.executeQuery(query, delegate: self, didFinish: #selector(storeEvents(ticket:finishedWithObject:error:)))
-    }
-    
-    // Show the events
-    @objc func storeEvents(ticket: GTLRServiceTicket, finishedWithObject response: GTLRCalendar_Events, error: NSError?) {
-        if let error = error {
-            showAlert(title: "Error", message: error.localizedDescription)
-            return
-        }
-        
-        // Get the events, create Event objects and store them in the array
-        if let events = response.items {
-            for event in events {
-                let start = event.start!.dateTime ?? event.start!.date!
-                let eventObj = Event()
-                eventObj.date = DateFormatter.localizedString(from: start.date, dateStyle: .short, timeStyle: .short)
-                eventObj.title = event.summary
-                eventObj.location = event.location
-                eventList.append(eventObj)
-            }
-        } else {
-            let noEvents = UITextView()
-            noEvents.text = "No upcoming events found."
-            noEvents.frame = view.bounds
-            noEvents.widthAnchor.constraint(equalTo: view.widthAnchor)
-            noEvents.translatesAutoresizingMaskIntoConstraints = false
-            view.addSubview(noEvents)
-        }
     }
 }
 

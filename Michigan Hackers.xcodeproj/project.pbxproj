@@ -8,15 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		B9CC9B9756492EDE960CE033 /* Pods_Michigan_Hackers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F0D2FACDD711FC9E55948B /* Pods_Michigan_Hackers.framework */; };
+		DB0B094A208ACCC100486C5C /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0B0949208ACCC100486C5C /* EventCell.swift */; };
+		DB0B094D208AD39300486C5C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0B094C208AD39300486C5C /* Theme.swift */; };
+		DB0B094F208AD48C00486C5C /* Ultramagnetic Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB0B094E208AD48C00486C5C /* Ultramagnetic Regular.ttf */; };
 		DB459C8E203F9673007A4D89 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB459C8D203F9673007A4D89 /* CalendarController.swift */; };
 		DB459C90203F99DD007A4D89 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB459C8F203F99DD007A4D89 /* NotificationController.swift */; };
 		DB459C92203F9BCB007A4D89 /* ResourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB459C91203F9BCB007A4D89 /* ResourcesController.swift */; };
+		DB55C5B9209828EF003422D1 /* GoogleAPIClientForREST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB55C5B8209828EF003422D1 /* GoogleAPIClientForREST.framework */; };
 		DB68654520438E160005233C /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB68654420438E160005233C /* Event.swift */; };
 		DB747BD2201AB36300F67C86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB747BD1201AB36300F67C86 /* AppDelegate.swift */; };
 		DB747BD9201AB36300F67C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB747BD8201AB36300F67C86 /* Assets.xcassets */; };
 		DB747BDC201AB36300F67C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB747BDA201AB36300F67C86 /* LaunchScreen.storyboard */; };
 		DB902335206D887C00083D78 /* EventSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB902334206D887C00083D78 /* EventSectionController.swift */; };
 		DBA652DB208A9AF800038558 /* DateSortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA652DA208A9AF800038558 /* DateSortable.swift */; };
+		DBA6573920996F1700BF8C6E /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA6573820996F1700BF8C6E /* SignInController.swift */; };
 		DBBA1538207C627400783BE6 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBBA1537207C627400783BE6 /* credentials.plist */; };
 		DBBFEF17205B2EA500C802A9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBFEF16205B2EA500C802A9 /* TabBarController.swift */; };
 		DBFF347C2023F1490020B7AA /* logo_square.png in Resources */ = {isa = PBXBuildFile; fileRef = DBFF347B2023F1490020B7AA /* logo_square.png */; };
@@ -26,10 +31,16 @@
 /* Begin PBXFileReference section */
 		91738A33D49BA5335B392FF5 /* Pods-Michigan Hackers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Michigan Hackers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Michigan Hackers/Pods-Michigan Hackers.debug.xcconfig"; sourceTree = "<group>"; };
 		9E75BE18609F638109ABFD78 /* Pods-Michigan Hackers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Michigan Hackers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Michigan Hackers/Pods-Michigan Hackers.release.xcconfig"; sourceTree = "<group>"; };
+		DB0B0949208ACCC100486C5C /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		DB0B094C208AD39300486C5C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		DB0B094E208AD48C00486C5C /* Ultramagnetic Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ultramagnetic Regular.ttf"; sourceTree = "<group>"; };
 		DB0D9E1E2036752300323B67 /* libIGListKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libIGListKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB459C8D203F9673007A4D89 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		DB459C8F203F99DD007A4D89 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		DB459C91203F9BCB007A4D89 /* ResourcesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesController.swift; sourceTree = "<group>"; };
+		DB55C5B8209828EF003422D1 /* GoogleAPIClientForREST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleAPIClientForREST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB55C5BA20982910003422D1 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB55C5BC20982910003422D1 /* GTMOAuth2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMOAuth2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB68654420438E160005233C /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		DB747BCE201AB36300F67C86 /* Michigan Hackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Michigan Hackers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB747BD1201AB36300F67C86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +49,7 @@
 		DB747BDD201AB36300F67C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB902334206D887C00083D78 /* EventSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSectionController.swift; sourceTree = "<group>"; };
 		DBA652DA208A9AF800038558 /* DateSortable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSortable.swift; sourceTree = "<group>"; };
+		DBA6573820996F1700BF8C6E /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		DBBA1537207C627400783BE6 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		DBBFEF16205B2EA500C802A9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		DBFF347B2023F1490020B7AA /* logo_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_square.png; sourceTree = "<group>"; };
@@ -50,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB55C5B9209828EF003422D1 /* GoogleAPIClientForREST.framework in Frameworks */,
 				B9CC9B9756492EDE960CE033 /* Pods_Michigan_Hackers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +73,9 @@
 		842643E4B40F2686C43D72CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB55C5BA20982910003422D1 /* GoogleToolboxForMac.framework */,
+				DB55C5BC20982910003422D1 /* GTMOAuth2.framework */,
+				DB55C5B8209828EF003422D1 /* GoogleAPIClientForREST.framework */,
 				DB0D9E1E2036752300323B67 /* libIGListKit.a */,
 				F3F0D2FACDD711FC9E55948B /* Pods_Michigan_Hackers.framework */,
 			);
@@ -75,32 +91,50 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB0B0948208ACC8F00486C5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB0B0949208ACCC100486C5C /* EventCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB0B094B208AD38400486C5C /* Systems */ = {
+			isa = PBXGroup;
+			children = (
+				DB0B094C208AD39300486C5C /* Theme.swift */,
+			);
+			path = Systems;
+			sourceTree = "<group>";
+		};
 		DB0D9E1B20366DE000323B67 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				DB747BD8201AB36300F67C86 /* Assets.xcassets */,
 				DBFF347B2023F1490020B7AA /* logo_square.png */,
+				DB0B094E208AD48C00486C5C /* Ultramagnetic Regular.ttf */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		DB0D9E1C20366E5400323B67 /* ViewControllers */ = {
+		DB0D9E1C20366E5400323B67 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DBA6573820996F1700BF8C6E /* SignInController.swift */,
 				DBBFEF16205B2EA500C802A9 /* TabBarController.swift */,
 				DBFF347D2023F3F20020B7AA /* EventController.swift */,
 				DB459C8D203F9673007A4D89 /* CalendarController.swift */,
 				DB459C8F203F99DD007A4D89 /* NotificationController.swift */,
 				DB459C91203F9BCB007A4D89 /* ResourcesController.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		DB68654320438E040005233C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DB68654420438E160005233C /* Event.swift */,
 				DBA652DA208A9AF800038558 /* DateSortable.swift */,
+				DB68654420438E160005233C /* Event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -128,8 +162,10 @@
 			children = (
 				DB747BD1201AB36300F67C86 /* AppDelegate.swift */,
 				DB747BDA201AB36300F67C86 /* LaunchScreen.storyboard */,
+				DB0B094B208AD38400486C5C /* Systems */,
 				DB68654320438E040005233C /* Models */,
-				DB0D9E1C20366E5400323B67 /* ViewControllers */,
+				DB0B0948208ACC8F00486C5C /* Views */,
+				DB0D9E1C20366E5400323B67 /* Controllers */,
 				DB902333206D885B00083D78 /* SectionControllers */,
 				DB0D9E1B20366DE000323B67 /* Assets */,
 				DB747BDD201AB36300F67C86 /* Info.plist */,
@@ -176,7 +212,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Connor Svrcek";
 				TargetAttributes = {
 					DB747BCD201AB36300F67C86 = {
@@ -208,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB0B094F208AD48C00486C5C /* Ultramagnetic Regular.ttf in Resources */,
 				DB747BDC201AB36300F67C86 /* LaunchScreen.storyboard in Resources */,
 				DBBA1538207C627400783BE6 /* credentials.plist in Resources */,
 				DB747BD9201AB36300F67C86 /* Assets.xcassets in Resources */,
@@ -289,11 +326,14 @@
 			files = (
 				DBA652DB208A9AF800038558 /* DateSortable.swift in Sources */,
 				DB459C90203F99DD007A4D89 /* NotificationController.swift in Sources */,
+				DB0B094A208ACCC100486C5C /* EventCell.swift in Sources */,
 				DB459C8E203F9673007A4D89 /* CalendarController.swift in Sources */,
+				DB0B094D208AD39300486C5C /* Theme.swift in Sources */,
 				DB902335206D887C00083D78 /* EventSectionController.swift in Sources */,
 				DB459C92203F9BCB007A4D89 /* ResourcesController.swift in Sources */,
 				DB747BD2201AB36300F67C86 /* AppDelegate.swift in Sources */,
 				DBBFEF17205B2EA500C802A9 /* TabBarController.swift in Sources */,
+				DBA6573920996F1700BF8C6E /* SignInController.swift in Sources */,
 				DB68654520438E160005233C /* Event.swift in Sources */,
 				DBFF347E2023F3F20020B7AA /* EventController.swift in Sources */,
 			);
@@ -316,6 +356,7 @@
 		DB747BDE201AB36300F67C86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -327,6 +368,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -334,6 +376,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -373,6 +416,7 @@
 		DB747BDF201AB36300F67C86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -384,6 +428,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -391,6 +436,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -433,7 +479,7 @@
 				LD_MAP_FILE_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.connorsvrcek.Michigan-Hackers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -453,7 +499,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_MAP_FILE_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.connorsvrcek.Michigan-Hackers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

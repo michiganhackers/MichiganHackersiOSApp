@@ -1,6 +1,18 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## FirebaseAnalytics
+
+Copyright 2017 Google
+
+## FirebaseCore
+
+Copyright 2017 Google
+
+## FirebaseInstanceID
+
+Copyright 2017 Google
+
 ## GTMOAuth2
 
 
@@ -412,6 +424,10 @@ This application makes use of the following third party libraries:
    See the License for the specific language governing permissions and
    limitations under the License.
 
+
+## Google
+
+Copyright 2016 Google Inc.
 
 ## GoogleAPIClientForREST
 
