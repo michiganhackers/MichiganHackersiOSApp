@@ -25,6 +25,7 @@ class SignInController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().scopes = scopes
+        GIDSignIn.sharedInstance().signInSilently()
         
         view.addSubview(signInButton)
         signInButton.frame = CGRect(x: (view.frame.width / 2) - 50, y: (view.frame.height / 2) - 25, width: 100, height: 50)
@@ -35,7 +36,7 @@ class SignInController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate
             showAlert(title: "Authentication Error", message: error.localizedDescription)
             self.service.authorizer = nil
         } else {
-            //self.signInButton.isHidden = true
+            self.signInButton.isHidden = true
             self.service.authorizer = user.authentication.fetcherAuthorizer()
             self.dismiss(animated: true, completion: nil)
         }

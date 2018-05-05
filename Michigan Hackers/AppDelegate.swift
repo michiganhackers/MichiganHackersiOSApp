@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = TabBarController()
         window?.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
+        UITabBar.appearance().tintColor = UIColor(hexString: "F15D24")
+        
         GIDSignIn.sharedInstance().clientID = "306181334663-17t5l6ltgcm9cinu99v9apagq94veb74.apps.googleusercontent.com"
         
         return true

@@ -31,5 +31,5 @@ extension UIColor {
 
 // Ultramagnetic font
 func Ultramagnetic(size: CGFloat) -> UIFont {
-    return UIFont(name: "Ultramagnetic Regular", size: size)!
+    return UIFont(name: "Ultramagnetic", size: size)!
 }
