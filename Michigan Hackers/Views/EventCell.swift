@@ -14,7 +14,16 @@ class EventCell: UICollectionViewCell {
         let title = UILabel()
         title.backgroundColor = UIColor.clear
         title.textColor = UIColor.white
-        title.font = Ultramagnetic(size: 18)
+        
+        let font = Ultramagnetic(size: 18)
+        // Allow for the user to scale the font
+        if #available(iOS 11.0, *) {
+            let metrics = UIFontMetrics(forTextStyle: .body)
+            title.font = metrics.scaledFont(for: font)
+        } else {
+            title.font = font
+        }
+        
         title.textAlignment = .left
         return title
     }()
@@ -23,7 +32,16 @@ class EventCell: UICollectionViewCell {
         let date = UILabel()
         date.backgroundColor = UIColor.clear
         date.textColor = UIColor.white
-        date.font = Ultramagnetic(size: 14)
+        
+        let font = Ultramagnetic(size: 14)
+        // Allow for the user to scale the font
+        if #available(iOS 11.0, *) {
+            let metrics = UIFontMetrics(forTextStyle: .body)
+            date.font = metrics.scaledFont(for: font)
+        } else {
+            date.font = font
+        }
+        
         date.textAlignment = .left
         return date
     }()
@@ -32,7 +50,16 @@ class EventCell: UICollectionViewCell {
         let location = UILabel()
         location.backgroundColor = UIColor.clear
         location.textColor = UIColor.white
-        location.font = Ultramagnetic(size: 14)
+        
+        let font = Ultramagnetic(size: 14)
+        // Allow for the user to scale the font
+        if #available(iOS 11.0, *) {
+            let metrics = UIFontMetrics(forTextStyle: .body)
+            location.font = metrics.scaledFont(for: font)
+        } else {
+            location.font = font
+        }
+        
         location.textAlignment = .left
         return location
     }()

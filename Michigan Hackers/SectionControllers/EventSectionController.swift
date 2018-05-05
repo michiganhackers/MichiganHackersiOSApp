@@ -28,7 +28,11 @@ class EventSectionController: ListSectionController {
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
-        return collectionContext!.dequeueReusableCell(of: EventCell.self, for: self, at: index)
+        let cell = collectionContext!.dequeueReusableCell(of: EventCell.self, for: self, at: index) as! EventCell
+        cell.title.text = event.title
+        cell.date.text = event.date
+        cell.location.text = event.location
+        return cell
     }
     
     override func didUpdate(to object: Any) {

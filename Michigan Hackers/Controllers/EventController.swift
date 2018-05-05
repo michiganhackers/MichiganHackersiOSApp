@@ -55,9 +55,9 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 0)
     }()
     
-    lazy var collectionView: UICollectionView = {
-        let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
-        let cv = UICollectionView(frame: frame, collectionViewLayout: UICollectionViewFlowLayout())
+    let collectionView: UICollectionView = {
+        //let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: ListCollectionViewLayout(stickyHeaders: false, topContentInset: 0, stretchToEdge: false))
         cv.backgroundColor = UIColor.white
         return cv
     }()
@@ -155,6 +155,8 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
 
 // ListKit stuff
 extension EventController: ListAdapterDataSource {
+    
+    // TODO: fix problem where this function runs before the event query is even started
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
         return eventList.sorted(by: { (left: Event, right: Event) -> Bool in
             if let left = left as? DateSortable, let right = right as? DateSortable {
@@ -170,6 +172,7 @@ extension EventController: ListAdapterDataSource {
     }
 
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
+        print("EMPTY VIEW")
         return nil
     }
 }
