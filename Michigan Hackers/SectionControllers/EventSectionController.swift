@@ -32,6 +32,7 @@ class EventSectionController: ListSectionController {
         cell.title.text = event.title
         cell.date.text = event.date
         cell.location.text = event.location
+        cell.details.text = event.details
         return cell
     }
     

@@ -64,11 +64,27 @@ class EventCell: UICollectionViewCell {
         return location
     }()
     
+    let details: UILabel = {
+        let deets = UILabel()
+        deets.backgroundColor = UIColor.clear
+        deets.textColor = UIColor.white
+        
+        let font = Ultramagnetic(size: 10)
+        // Allow for the user to scale the font
+        if #available(iOS 11.0, *) {
+            let metrics = UIFontMetrics(forTextStyle: .body)
+            deets.font = metrics.scaledFont(for: font)
+        } else {
+            deets.font = font
+        }
+        
+        deets.textAlignment = .left
+        return deets
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.addSubview(title)
-        contentView.addSubview(date)
-        contentView.addSubview(location)
+        setupContentViewComponents()
         contentView.backgroundColor = UIColor(hexString: "F15D24")
     }
     
@@ -82,6 +98,31 @@ class EventCell: UICollectionViewCell {
         title.frame = inset
         date.frame = inset
         location.frame = inset
+        details.frame = inset
+    }
+    
+    func setupContentViewComponents() {
+        contentView.addSubview(title)
+        contentView.addSubview(date)
+        contentView.addSubview(location)
+        contentView.addSubview(details)
+        
+        // Title constraints
+        title.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 15)
+        title.bottomAnchor.constraint(equalTo: date.topAnchor, constant: 10)
+        
+        // Date constraints
+        date.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 10)
+        date.bottomAnchor.constraint(equalTo: location.topAnchor, constant: 10)
+        
+        // Location constraints
+        location.topAnchor.constraint(equalTo: date.bottomAnchor, constant: 10)
+        location.bottomAnchor.constraint(equalTo: details.topAnchor, constant: 10)
+        
+        // Details constraints
+        details.topAnchor.constraint(equalTo: location.bottomAnchor, constant: 10)
+        details.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: 15)
+        
     }
     
     

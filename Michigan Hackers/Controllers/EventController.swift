@@ -145,8 +145,9 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         if let events = response.items, !events.isEmpty {
             for event in events {
                 let start = event.start!.dateTime ?? event.start!.date!
-                guard let title = event.summary, let location = event.location else {return}
-                let eventObj = Event(title: title, date: DateFormatter.localizedString(from: start.date, dateStyle: .short, timeStyle: .short), location: location)
+                // TODO: what if an event doesn't have a description?
+                guard let title = event.summary, let location = event.location, let details = event.descriptionProperty else {return}
+                let eventObj = Event(title: title, date: DateFormatter.localizedString(from: start.date, dateStyle: .short, timeStyle: .short), location: location, details: details)
                 eventList.append(eventObj)
             }
         } else {
@@ -165,12 +166,6 @@ extension EventController: ListAdapterDataSource {
         var items = [ListDiffable]()
         items += eventList as [ListDiffable]
         
-//        return items.sorted(by: { (left: Any, right: Any) -> Bool in
-//            if let left = left as? DateSortable, let right = right as? DateSortable {
-//                return left.date > right.date
-//            }
-//            return false
-//        })
         return items
     }
 
