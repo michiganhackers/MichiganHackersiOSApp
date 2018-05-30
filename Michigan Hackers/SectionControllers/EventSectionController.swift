@@ -24,7 +24,7 @@ class EventSectionController: ListSectionController {
     override func sizeForItem(at index: Int) -> CGSize {
         guard let context = collectionContext else { return .zero }
         
-        return CGSize(width: context.containerSize.width, height: 200)
+        return CGSize(width: context.containerSize.width - 30, height: 200)
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {

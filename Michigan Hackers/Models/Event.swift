@@ -9,6 +9,12 @@
 import Foundation
 
 class Event: NSObject {
+    init(title: String, date: String, location: String) {
+        self.title = title
+        self.date = date
+        self.location = location
+    }
+    
     var title: String?
     var date: String?
     var location: String?

@@ -20,7 +20,18 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
     
     private var eventList = [Event]()
     
-    let noEvents = UITextView()
+    lazy var noEvents: UITextView = {
+        let noEvents = UITextView()
+        noEvents.frame = view.bounds
+        noEvents.isEditable = false
+        noEvents.isHidden = true
+        return noEvents
+    }()
+    
+    func setupNoEvents() {
+        noEvents.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        noEvents.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
     
     lazy var signInButton: GIDSignInButton = {
         let button = GIDSignInButton()
@@ -56,7 +67,6 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
     }()
     
     let collectionView: UICollectionView = {
-        //let frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         let cv = UICollectionView(frame: .zero, collectionViewLayout: ListCollectionViewLayout(stickyHeaders: false, topContentInset: 0, stretchToEdge: false))
         cv.backgroundColor = UIColor.white
         return cv
@@ -66,28 +76,22 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         super.viewDidLoad()
         view.addSubview(collectionView)
         
-        
         // Configure Google Sign-in.
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().scopes = scopes
         //GIDSignIn.sharedInstance().signInSilently()
-        //GIDSignIn.sharedInstance().signOut()
         
         view.addSubview(stackView)
         setupSignInStackView()
         
-        noEvents.frame = view.bounds
-        noEvents.isEditable = false
-        noEvents.center = CGPoint(x: view.bounds.width / 2, y: 15)
-        noEvents.isHidden = true
         view.addSubview(noEvents)
-        
-        adapter.collectionView = self.collectionView
-        adapter.dataSource = self
-        //self.present(SignInController(), animated: true, completion: nil)
-        
-        //fetchEvents()
+        setupNoEvents()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        collectionView.frame = view.bounds
     }
     
     // Helper for showing an alert
@@ -138,32 +142,36 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         }
         
         // Get the events, create Event objects and store them in the array
-        if let events = response.items {
+        if let events = response.items, !events.isEmpty {
             for event in events {
                 let start = event.start!.dateTime ?? event.start!.date!
-                let eventObj = Event()
-                eventObj.date = DateFormatter.localizedString(from: start.date, dateStyle: .short, timeStyle: .short)
-                eventObj.title = event.summary
-                eventObj.location = event.location
+                guard let title = event.summary, let location = event.location else {return}
+                let eventObj = Event(title: title, date: DateFormatter.localizedString(from: start.date, dateStyle: .short, timeStyle: .short), location: location)
                 eventList.append(eventObj)
             }
         } else {
             noEvents.text = "No upcoming events found."
         }
+        
+        adapter.collectionView = self.collectionView
+        adapter.dataSource = self
     }
 }
 
 // ListKit stuff
 extension EventController: ListAdapterDataSource {
     
-    // TODO: fix problem where this function runs before the event query is even started
     func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
-        return eventList.sorted(by: { (left: Event, right: Event) -> Bool in
-            if let left = left as? DateSortable, let right = right as? DateSortable {
-                return left.date < right.date
-            }
-            return false
-        }) as! [ListDiffable]
+        var items = [ListDiffable]()
+        items += eventList as [ListDiffable]
+        
+//        return items.sorted(by: { (left: Any, right: Any) -> Bool in
+//            if let left = left as? DateSortable, let right = right as? DateSortable {
+//                return left.date > right.date
+//            }
+//            return false
+//        })
+        return items
     }
 
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {

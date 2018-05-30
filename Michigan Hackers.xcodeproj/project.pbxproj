@@ -11,6 +11,7 @@
 		DB0B094A208ACCC100486C5C /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0B0949208ACCC100486C5C /* EventCell.swift */; };
 		DB0B094D208AD39300486C5C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0B094C208AD39300486C5C /* Theme.swift */; };
 		DB0B094F208AD48C00486C5C /* Ultramagnetic Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB0B094E208AD48C00486C5C /* Ultramagnetic Regular.ttf */; };
+		DB31902E20BE1FB400F58E79 /* NSObject+ListDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB31902D20BE1FB400F58E79 /* NSObject+ListDiffable.swift */; };
 		DB459C8E203F9673007A4D89 /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB459C8D203F9673007A4D89 /* CalendarController.swift */; };
 		DB459C90203F99DD007A4D89 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB459C8F203F99DD007A4D89 /* NotificationController.swift */; };
 		DB459C92203F9BCB007A4D89 /* ResourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB459C91203F9BCB007A4D89 /* ResourcesController.swift */; };
@@ -34,6 +35,7 @@
 		DB0B094C208AD39300486C5C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		DB0B094E208AD48C00486C5C /* Ultramagnetic Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ultramagnetic Regular.ttf"; sourceTree = "<group>"; };
 		DB0D9E1E2036752300323B67 /* libIGListKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libIGListKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB31902D20BE1FB400F58E79 /* NSObject+ListDiffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ListDiffable.swift"; sourceTree = "<group>"; };
 		DB459C8D203F9673007A4D89 /* CalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		DB459C8F203F99DD007A4D89 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		DB459C91203F9BCB007A4D89 /* ResourcesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				DBA652DA208A9AF800038558 /* DateSortable.swift */,
 				DB68654420438E160005233C /* Event.swift */,
+				DB31902D20BE1FB400F58E79 /* NSObject+ListDiffable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			files = (
 				DBA652DB208A9AF800038558 /* DateSortable.swift in Sources */,
 				DB459C90203F99DD007A4D89 /* NotificationController.swift in Sources */,
+				DB31902E20BE1FB400F58E79 /* NSObject+ListDiffable.swift in Sources */,
 				DB0B094A208ACCC100486C5C /* EventCell.swift in Sources */,
 				DB459C8E203F9673007A4D89 /* CalendarController.swift in Sources */,
 				DB0B094D208AD39300486C5C /* Theme.swift in Sources */,
