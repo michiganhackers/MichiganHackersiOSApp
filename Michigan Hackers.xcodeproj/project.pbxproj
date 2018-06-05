@@ -24,6 +24,7 @@
 		DBA652DB208A9AF800038558 /* DateSortable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA652DA208A9AF800038558 /* DateSortable.swift */; };
 		DBBA1538207C627400783BE6 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBBA1537207C627400783BE6 /* credentials.plist */; };
 		DBBFEF17205B2EA500C802A9 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBFEF16205B2EA500C802A9 /* TabBarController.swift */; };
+		DBDB9E5E20BF499600859B7E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDB9E5D20BF499600859B7E /* Helpers.swift */; };
 		DBFF347C2023F1490020B7AA /* logo_square.png in Resources */ = {isa = PBXBuildFile; fileRef = DBFF347B2023F1490020B7AA /* logo_square.png */; };
 		DBFF347E2023F3F20020B7AA /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF347D2023F3F20020B7AA /* EventController.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		DBA652DA208A9AF800038558 /* DateSortable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSortable.swift; sourceTree = "<group>"; };
 		DBBA1537207C627400783BE6 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		DBBFEF16205B2EA500C802A9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		DBDB9E5D20BF499600859B7E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		DBFF347B2023F1490020B7AA /* logo_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_square.png; sourceTree = "<group>"; };
 		DBFF347D2023F3F20020B7AA /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		F3F0D2FACDD711FC9E55948B /* Pods_Michigan_Hackers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Michigan_Hackers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				DB0B094C208AD39300486C5C /* Theme.swift */,
+				DBDB9E5D20BF499600859B7E /* Helpers.swift */,
 			);
 			path = Systems;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				DB459C92203F9BCB007A4D89 /* ResourcesController.swift in Sources */,
 				DB747BD2201AB36300F67C86 /* AppDelegate.swift in Sources */,
 				DBBFEF17205B2EA500C802A9 /* TabBarController.swift in Sources */,
+				DBDB9E5E20BF499600859B7E /* Helpers.swift in Sources */,
 				DB68654520438E160005233C /* Event.swift in Sources */,
 				DBFF347E2023F3F20020B7AA /* EventController.swift in Sources */,
 			);

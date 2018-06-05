@@ -10,12 +10,20 @@ import UIKit
 
 class EventCell: UICollectionViewCell {
     
-    let title: UILabel = {
+    lazy var infoStack: UIStackView = {
+        let stack = UIStackView(arrangedSubviews: [title, date, location, details])
+        stack.axis = .vertical
+        stack.distribution = .fillProportionally
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+    
+    lazy var title: UILabel = {
         let title = UILabel()
         title.backgroundColor = UIColor.clear
         title.textColor = UIColor.white
         
-        let font = Ultramagnetic(size: 18)
+        let font = Ultramagnetic(size: 24)
         // Allow for the user to scale the font
         if #available(iOS 11.0, *) {
             let metrics = UIFontMetrics(forTextStyle: .body)
@@ -24,16 +32,17 @@ class EventCell: UICollectionViewCell {
             title.font = font
         }
         
+        //title.frame = CGRect(x: contentView.frame.midX, y: 15, width: contentView.frame.width - 30, height: 14)
         title.textAlignment = .left
         return title
     }()
     
-    let date: UILabel = {
+    lazy var date: UILabel = {
         let date = UILabel()
         date.backgroundColor = UIColor.clear
         date.textColor = UIColor.white
         
-        let font = Ultramagnetic(size: 14)
+        let font = Ultramagnetic(size: 18)
         // Allow for the user to scale the font
         if #available(iOS 11.0, *) {
             let metrics = UIFontMetrics(forTextStyle: .body)
@@ -46,12 +55,12 @@ class EventCell: UICollectionViewCell {
         return date
     }()
     
-    let location: UILabel = {
+    lazy var location: UILabel = {
         let location = UILabel()
         location.backgroundColor = UIColor.clear
         location.textColor = UIColor.white
         
-        let font = Ultramagnetic(size: 14)
+        let font = Ultramagnetic(size: 18)
         // Allow for the user to scale the font
         if #available(iOS 11.0, *) {
             let metrics = UIFontMetrics(forTextStyle: .body)
@@ -64,12 +73,12 @@ class EventCell: UICollectionViewCell {
         return location
     }()
     
-    let details: UILabel = {
+    lazy var details: UILabel = {
         let deets = UILabel()
         deets.backgroundColor = UIColor.clear
         deets.textColor = UIColor.white
         
-        let font = Ultramagnetic(size: 10)
+        let font = Ultramagnetic(size: 12)
         // Allow for the user to scale the font
         if #available(iOS 11.0, *) {
             let metrics = UIFontMetrics(forTextStyle: .body)
@@ -79,6 +88,7 @@ class EventCell: UICollectionViewCell {
         }
         
         deets.textAlignment = .left
+        deets.numberOfLines = 5
         return deets
     }()
     
@@ -92,36 +102,30 @@ class EventCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        let inset = UIEdgeInsetsInsetRect(bounds, UIEdgeInsets(top: 8, left: 15, bottom: 8, right: 15))
-        title.frame = inset
-        date.frame = inset
-        location.frame = inset
-        details.frame = inset
-    }
-    
     func setupContentViewComponents() {
-        contentView.addSubview(title)
-        contentView.addSubview(date)
-        contentView.addSubview(location)
-        contentView.addSubview(details)
+        contentView.addSubview(infoStack)
+        
+        infoStack.layoutMargins = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        infoStack.isLayoutMarginsRelativeArrangement = true
+        
         
         // Title constraints
-        title.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 15)
-        title.bottomAnchor.constraint(equalTo: date.topAnchor, constant: 10)
-        
+        title.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 5).isActive = true
+        title.bottomAnchor.constraint(equalTo: date.topAnchor, constant: 10).isActive = true
+
         // Date constraints
-        date.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 10)
-        date.bottomAnchor.constraint(equalTo: location.topAnchor, constant: 10)
-        
+        date.topAnchor.constraint(equalTo: title.bottomAnchor).isActive = true
+        date.bottomAnchor.constraint(equalTo: location.topAnchor, constant: 10).isActive = true
+
         // Location constraints
-        location.topAnchor.constraint(equalTo: date.bottomAnchor, constant: 10)
-        location.bottomAnchor.constraint(equalTo: details.topAnchor, constant: 10)
-        
+        location.topAnchor.constraint(equalTo: date.bottomAnchor).isActive = true
+        location.bottomAnchor.constraint(equalTo: details.topAnchor, constant: 10).isActive = true
+
         // Details constraints
-        details.topAnchor.constraint(equalTo: location.bottomAnchor, constant: 10)
-        details.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: 15)
+        details.topAnchor.constraint(equalTo: location.bottomAnchor).isActive = true
+        details.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: 15).isActive = true
+        details.heightAnchor.constraint(equalTo: self.contentView.heightAnchor, multiplier: 1/3).isActive = true
+        details.widthAnchor.constraint(equalTo: self.contentView.widthAnchor).isActive = true
         
     }
     
