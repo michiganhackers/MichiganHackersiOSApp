@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B9CC9B9756492EDE960CE033 /* Pods_Michigan_Hackers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F0D2FACDD711FC9E55948B /* Pods_Michigan_Hackers.framework */; };
+		DB08741620D9DC5C009EA756 /* MonthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB08741520D9DC5C009EA756 /* MonthCell.swift */; };
 		DB0B094A208ACCC100486C5C /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0B0949208ACCC100486C5C /* EventCell.swift */; };
 		DB0B094D208AD39300486C5C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0B094C208AD39300486C5C /* Theme.swift */; };
 		DB0B094F208AD48C00486C5C /* Ultramagnetic Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB0B094E208AD48C00486C5C /* Ultramagnetic Regular.ttf */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		91738A33D49BA5335B392FF5 /* Pods-Michigan Hackers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Michigan Hackers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Michigan Hackers/Pods-Michigan Hackers.debug.xcconfig"; sourceTree = "<group>"; };
 		9E75BE18609F638109ABFD78 /* Pods-Michigan Hackers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Michigan Hackers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Michigan Hackers/Pods-Michigan Hackers.release.xcconfig"; sourceTree = "<group>"; };
+		DB08741520D9DC5C009EA756 /* MonthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCell.swift; sourceTree = "<group>"; };
 		DB0B0949208ACCC100486C5C /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		DB0B094C208AD39300486C5C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		DB0B094E208AD48C00486C5C /* Ultramagnetic Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ultramagnetic Regular.ttf"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				DB0B0949208ACCC100486C5C /* EventCell.swift */,
+				DB08741520D9DC5C009EA756 /* MonthCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -296,6 +300,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -333,6 +338,7 @@
 				DB0B094A208ACCC100486C5C /* EventCell.swift in Sources */,
 				DB459C8E203F9673007A4D89 /* CalendarController.swift in Sources */,
 				DB0B094D208AD39300486C5C /* Theme.swift in Sources */,
+				DB08741620D9DC5C009EA756 /* MonthCell.swift in Sources */,
 				DB902335206D887C00083D78 /* EventSectionController.swift in Sources */,
 				DB459C92203F9BCB007A4D89 /* ResourcesController.swift in Sources */,
 				DB747BD2201AB36300F67C86 /* AppDelegate.swift in Sources */,

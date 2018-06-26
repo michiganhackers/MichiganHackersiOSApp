@@ -105,12 +105,12 @@ class EventCell: UICollectionViewCell {
     func setupContentViewComponents() {
         contentView.addSubview(infoStack)
         
-        infoStack.layoutMargins = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
+        infoStack.layoutMargins = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 15)
         infoStack.isLayoutMarginsRelativeArrangement = true
         
         
         // Title constraints
-        title.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 5).isActive = true
+        title.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
         title.bottomAnchor.constraint(equalTo: date.topAnchor, constant: 10).isActive = true
 
         // Date constraints
@@ -128,9 +128,4 @@ class EventCell: UICollectionViewCell {
         details.widthAnchor.constraint(equalTo: self.contentView.widthAnchor).isActive = true
         
     }
-    
-    
-    
-    
-    
 }

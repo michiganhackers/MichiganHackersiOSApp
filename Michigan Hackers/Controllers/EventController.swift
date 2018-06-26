@@ -11,14 +11,14 @@ import IGListKit
 import GoogleAPIClientForREST
 import GoogleSignIn
 
+var eventList = [Event]()
+
 // Google Calendar/General ViewController stuff
 class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
     
     private let service = GTLRCalendarService()
     
     private let scopes = [kGTLRAuthScopeCalendarReadonly]
-    
-    private var eventList = [Event]()
     
     lazy var noEvents: UITextView = {
         let noEvents = UITextView()

@@ -44,11 +44,13 @@ PODS:
   - IGListKit/Default (3.2.0):
     - IGListKit/Diffing
   - IGListKit/Diffing (3.2.0)
+  - JTAppleCalendar (7.1.5)
 
 DEPENDENCIES:
   - Google/SignIn
   - GoogleAPIClientForREST/Calendar
   - IGListKit (~> 3.0)
+  - JTAppleCalendar (~> 7.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -62,6 +64,7 @@ SPEC REPOS:
     - GTMOAuth2
     - GTMSessionFetcher
     - IGListKit
+    - JTAppleCalendar
 
 SPEC CHECKSUMS:
   FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
@@ -74,7 +77,8 @@ SPEC CHECKSUMS:
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 390ea358e5a0d0133153806f744662dad933d06b
   IGListKit: ffe6f98a728ab0250aceea22e7957aa5477c5048
+  JTAppleCalendar: 2d4f974f9f3c8b4964d51ca1f6e004883c031fbe
 
-PODFILE CHECKSUM: 6d54c938638745ce4fa288c0163938b51f777c7f
+PODFILE CHECKSUM: 07cb354ae0c7999cb08577a15ac02bdcf4917eb2
 
 COCOAPODS: 1.5.0
