@@ -35,7 +35,6 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
     
     lazy var signInButton: GIDSignInButton = {
         let button = GIDSignInButton()
-        //button.frame = CGRect(x: view.frame.midX - 70, y: view.frame.midY - 25, width: 130, height: 50)
         return button
     }()
     

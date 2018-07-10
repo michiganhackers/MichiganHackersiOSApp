@@ -108,7 +108,6 @@ class EventCell: UICollectionViewCell {
         infoStack.layoutMargins = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 15)
         infoStack.isLayoutMarginsRelativeArrangement = true
         
-        
         // Title constraints
         title.topAnchor.constraint(equalTo: self.contentView.topAnchor).isActive = true
         title.bottomAnchor.constraint(equalTo: date.topAnchor, constant: 10).isActive = true
