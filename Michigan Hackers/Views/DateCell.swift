@@ -14,9 +14,6 @@ class DateCell: JTAppleCell {
         let date = UILabel()
         date.textColor = UIColor.white
         date.textAlignment = .center
-//        date.center = self.center
-//        date.center.x = self.center.x
-//        date.center.y = self.center.y
         date.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
         return date
     }()

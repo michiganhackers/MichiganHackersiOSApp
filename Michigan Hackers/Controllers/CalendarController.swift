@@ -27,6 +27,8 @@ class CalendarController: UIViewController {
     
     let calCellID = "CalendarCell"
     
+    let todaysDate = Date()
+    
     lazy var dateStack: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [monthLabel, yearLabel])
         stack.axis = .horizontal
@@ -109,7 +111,7 @@ class CalendarController: UIViewController {
         
         collectionView.register(DateCell.self, forCellWithReuseIdentifier: calCellID)
         
-        collectionView.visibleDates { (dateSegment) in
+        collectionView.visibleDates { dateSegment in
             self.initializeCalendar(dateSegment: dateSegment)
         }
         
@@ -151,16 +153,26 @@ extension CalendarController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
         let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: calCellID, for: indexPath) as! DateCell
         cell.dateLabel.text = cellState.text
+        configureCell(cell: cell, cellState: cellState)
         return cell
     }
     
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
-        if let startDate = formatter.date(from: "2018 01 01"), let endDate = formatter.date(from: "2018 12 31") {
-            let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate)
-            return parameters
-        } else {
-            return ConfigurationParameters(startDate: Date(), endDate: Date())
-        }
+        guard let startDate = formatter.date(from: "2018 01 01") else {return ConfigurationParameters(startDate: Date(), endDate: Date())}
+        let parameter = ConfigurationParameters(startDate: startDate, endDate: Date())
+        return parameter
+    }
+    
+    func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
+        configureCell(cell: cell, cellState: cellState)
+    }
+    
+    func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
+        configureCell(cell: cell, cellState: cellState)
+    }
+    
+    func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
+        initializeCalendar(dateSegment: visibleDates)
     }
     
     func initializeCalendar(dateSegment: DateSegmentInfo) {
@@ -175,11 +187,33 @@ extension CalendarController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
     func configureCell(cell: JTAppleCell?, cellState: CellState) {
         guard let dateCell = cell as? DateCell else {return}
         
-        //handleCellTextColor()
+        handleCellTextColor(cell: dateCell, cellState: cellState)
+        handleCellVisibility(cell: dateCell, cellState: cellState)
+        handleCellSelection(cell: dateCell, cellState: cellState)
     }
     
     func handleCellTextColor(cell: DateCell, cellState: CellState) {
         
+        formatter.dateFormat = "yyyy MM dd"
+        
+        let todaysDateString = formatter.string(from: todaysDate)
+        let monthDateString = formatter.string(from: cellState.date)
+        
+        if todaysDateString == monthDateString {
+            cell.dateLabel.textColor = UIColor.black
+            cell.backgroundColor = UIColor.white
+        } else {
+            cell.dateLabel.textColor = cellState.isSelected ? UIColor(hexString: "F15D24") : UIColor.white
+            cell.backgroundColor = cellState.isSelected ? UIColor.white : UIColor(hexString: "F15D24")
+        }
+    }
+    
+    func handleCellVisibility(cell: DateCell, cellState: CellState) {
+        cell.isHidden = cellState.dateBelongsTo == .thisMonth ? false : true
+    }
+    
+    func handleCellSelection(cell: DateCell, cellState: CellState) {
+        cell.selectedBackgroundView?.isHidden = cellState.isSelected ? false : true
     }
     
     
