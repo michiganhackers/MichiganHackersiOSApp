@@ -20,6 +20,8 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
     
     private let scopes = [kGTLRAuthScopeCalendarReadonly]
     
+    private let refreshControl = UIRefreshControl()
+    
     lazy var noEvents: UITextView = {
         let noEvents = UITextView()
         noEvents.frame = view.bounds
@@ -72,6 +74,8 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
     }()
     
     override func viewDidLoad() {
+        setupRefreshControl()
+        
         super.viewDidLoad()
         view.addSubview(collectionView)
         
@@ -109,6 +113,23 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         present(alert, animated: true, completion: nil)
     }
     
+    // Setup the refreshControl
+    func setupRefreshControl() {
+        // Add Refresh Control to CollectionView
+        if #available(iOS 10.0, *) {
+            collectionView.refreshControl = refreshControl
+        } else {
+            collectionView.addSubview(refreshControl)
+        }
+        
+        // Configure the refreshControl
+        refreshControl.addTarget(self, action: #selector(fetchEvents), for: .valueChanged)
+
+        // Style the refreshControl
+        refreshControl.tintColor = UIColor(hexString: "F15D24")
+    }
+    
+    // Sign users into Google account to load events
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             showAlert(title: "Authentication Error", message: error.localizedDescription)
@@ -124,13 +145,16 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
     }
     
     // Get the list of events from the calendar
-    func fetchEvents() {
+    @objc func fetchEvents() {
         let query = GTLRCalendarQuery_EventsList.query(withCalendarId: "8n8u58ssric1hmm84jvkvl9d68@group.calendar.google.com")
         query.maxResults = 10
         query.timeMin = GTLRDateTime(date: Date())
         query.singleEvents = true
         query.orderBy = kGTLRCalendarOrderByStartTime
         service.executeQuery(query, delegate: self, didFinish: #selector(storeEvents(ticket:finishedWithObject:error:)))
+        
+        collectionView.reloadData()
+        self.refreshControl.endRefreshing()
     }
     
     // Store the events to be shown
