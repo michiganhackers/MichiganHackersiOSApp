@@ -79,7 +79,7 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().scopes = scopes
-        //GIDSignIn.sharedInstance().signInSilently()
+        GIDSignIn.sharedInstance().signInSilently()
         
         view.addSubview(stackView)
         setupSignInStackView()

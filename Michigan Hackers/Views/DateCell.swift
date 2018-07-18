@@ -18,6 +18,16 @@ class DateCell: JTAppleCell {
         return date
     }()
     
+    lazy var dotView: UILabel = {
+        let dot = UILabel()
+        dot.text = "•"
+        dot.textColor = UIColor.black
+        dot.font = Ultramagnetic(size: 12)
+        dot.textAlignment = .center
+        dot.frame = CGRect(x: 0, y: 12, width: frame.width, height: frame.height)
+        return dot
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupSubviews()
@@ -25,10 +35,17 @@ class DateCell: JTAppleCell {
     
     func setupSubviews() {
         contentView.addSubview(dateLabel)
+        contentView.addSubview(dotView)
         
         // Date constraints
         dateLabel.topAnchor.constraint(equalTo: contentView.topAnchor)
-        dateLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+        dateLabel.bottomAnchor.constraint(equalTo: dotView.topAnchor)
+        
+        // Dot constraints
+        dotView.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: 5)
+        dotView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+        
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -29,6 +29,8 @@ class CalendarController: UIViewController {
     
     let todaysDate = Date()
     
+    var calendarEvents: [String:Event] = [:]
+    
     lazy var dateStack: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [monthLabel, yearLabel])
         stack.axis = .horizontal
@@ -96,6 +98,18 @@ class CalendarController: UIViewController {
         super.viewDidLoad()
         super.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         setupViews()
+        
+//        DispatchQueue.global().asyncAfter(deadline: .now()) {
+//            let serverObjects = self.getEventsFromArray()
+//            for (date, event) in serverObjects {
+//                let stringDate = self.formatter.string(from: date)
+//                self.calendarEvents[stringDate] = event
+//            }
+//            
+//            DispatchQueue.main.async {
+//                self.collectionView.reloadData()
+//            }
+//        }
     }
     
     func setupViews() {
@@ -190,6 +204,7 @@ extension CalendarController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
         handleCellTextColor(cell: dateCell, cellState: cellState)
         handleCellVisibility(cell: dateCell, cellState: cellState)
         handleCellSelection(cell: dateCell, cellState: cellState)
+        handleCellEvents(cell: dateCell, cellState: cellState)
     }
     
     func handleCellTextColor(cell: DateCell, cellState: CellState) {
@@ -216,10 +231,24 @@ extension CalendarController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
         cell.selectedBackgroundView?.isHidden = cellState.isSelected ? false : true
     }
     
-    
+    func handleCellEvents(cell: DateCell, cellState: CellState) {
+        cell.dotView.isHidden = !calendarEvents.contains(where: {$0.key == formatter.string(from: cellState.date)})
+    }
 }
 
-
-
-
+//
+//extension CalendarController {
+//    // TODO: figure out how to change date format to "yyyy MM dd"
+//    func getEventsFromArray() -> [Date:Event] {
+//        formatter.dateFormat = "yyyy MM dd"
+//        var calEvents = [Date:Event]()
+//        for event in eventList {
+//            let date = formatter.date(from: event.date!)
+//            calEvents[date!] = event
+//        }
+//        return calEvents
+//    }
+//}
+//
+//
 
