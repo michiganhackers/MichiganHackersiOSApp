@@ -53,6 +53,7 @@
 		DB747BDD201AB36300F67C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB902334206D887C00083D78 /* EventSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSectionController.swift; sourceTree = "<group>"; };
 		DBA652DA208A9AF800038558 /* DateSortable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSortable.swift; sourceTree = "<group>"; };
+		DBA68D702111468C00E1FF93 /* IGListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IGListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBBA1537207C627400783BE6 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		DBBFEF16205B2EA500C802A9 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		DBDB9E5D20BF499600859B7E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		842643E4B40F2686C43D72CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBA68D702111468C00E1FF93 /* IGListKit.framework */,
 				DB55C5BA20982910003422D1 /* GoogleToolboxForMac.framework */,
 				DB55C5BC20982910003422D1 /* GTMOAuth2.framework */,
 				DB55C5B8209828EF003422D1 /* GoogleAPIClientForREST.framework */,

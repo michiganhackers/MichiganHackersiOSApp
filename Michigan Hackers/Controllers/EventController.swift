@@ -166,10 +166,12 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         
         // Get the events, create Event objects and store them in the array
         if let events = response.items, !events.isEmpty {
+            // Empty string for description
             for event in events {
                 let start = event.start!.dateTime ?? event.start!.date!
                 // TODO: what if an event doesn't have a description?
-                guard let title = event.summary, let location = event.location, let details = event.descriptionProperty else {return}
+                guard let title = event.summary, let location = event.location else {continue}
+                let details = event.descriptionProperty ?? ""
                 let eventObj = Event(title: title, date: DateFormatter.localizedString(from: start.date, dateStyle: .short, timeStyle: .short), location: location, details: details)
                 eventList.append(eventObj)
             }
