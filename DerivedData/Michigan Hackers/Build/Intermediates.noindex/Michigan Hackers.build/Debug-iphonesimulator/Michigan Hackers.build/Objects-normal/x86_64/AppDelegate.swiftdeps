@@ -1,0 +1,889 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AppDelegate"
+provides-nominal:
+- "16Michigan_Hackers11AppDelegateC"
+provides-member:
+- ["16Michigan_Hackers11AppDelegateC", ""]
+provides-dynamic-lookup:
+- "application"
+- "window"
+depends-top-level:
+- "AppDelegate"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "FloatLiteralType"
+- !private "GIDSignIn"
+- "String"
+- !private "StringLiteralType"
+- !private "TabBarController"
+- "UIApplication"
+- "UIApplicationDelegate"
+- "UIApplicationLaunchOptionsKey"
+- "UIApplicationOpenURLOptionsKey"
+- !private "UIColor"
+- "UIResponder"
+- !private "UIScreen"
+- !private "UITabBar"
+- "UIWindow"
+- "URL"
+- !private "_ColorLiteralType"
+depends-member:
+- ["16Michigan_Hackers11AppDelegateC", "Bool"]
+- !private ["16Michigan_Hackers11AppDelegateC", "GIDSignIn"]
+- ["16Michigan_Hackers11AppDelegateC", "String"]
+- !private ["16Michigan_Hackers11AppDelegateC", "TabBarController"]
+- ["16Michigan_Hackers11AppDelegateC", "UIApplication"]
+- ["16Michigan_Hackers11AppDelegateC", "UIApplicationLaunchOptionsKey"]
+- ["16Michigan_Hackers11AppDelegateC", "UIApplicationOpenURLOptionsKey"]
+- !private ["16Michigan_Hackers11AppDelegateC", "UIColor"]
+- !private ["16Michigan_Hackers11AppDelegateC", "UIScreen"]
+- !private ["16Michigan_Hackers11AppDelegateC", "UITabBar"]
+- ["16Michigan_Hackers11AppDelegateC", "UIWindow"]
+- ["16Michigan_Hackers11AppDelegateC", "URL"]
+- ["16Michigan_Hackers11AppDelegateC", "application"]
+- ["16Michigan_Hackers11AppDelegateC", "applicationDidBecomeActive"]
+- ["16Michigan_Hackers11AppDelegateC", "applicationDidEnterBackground"]
+- ["16Michigan_Hackers11AppDelegateC", "applicationDidFinishLaunching"]
+- ["16Michigan_Hackers11AppDelegateC", "applicationDidReceiveMemoryWarning"]
+- ["16Michigan_Hackers11AppDelegateC", "applicationProtectedDataDidBecomeAvailable"]
+- ["16Michigan_Hackers11AppDelegateC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["16Michigan_Hackers11AppDelegateC", "applicationShouldRequestHealthAuthorization"]
+- ["16Michigan_Hackers11AppDelegateC", "applicationSignificantTimeChange"]
+- ["16Michigan_Hackers11AppDelegateC", "applicationWillEnterForeground"]
+- ["16Michigan_Hackers11AppDelegateC", "applicationWillResignActive"]
+- ["16Michigan_Hackers11AppDelegateC", "applicationWillTerminate"]
+- ["16Michigan_Hackers11AppDelegateC", "deinit"]
+- ["16Michigan_Hackers11AppDelegateC", "init"]
+- ["16Michigan_Hackers11AppDelegateC", "window"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["So15CALayerDelegateP", "appearance"]
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
+- !private ["So15CALayerDelegateP", "rootViewController"]
+- !private ["So15CALayerDelegateP", "tintColor"]
+- !private ["s7CVarArgP", "GIDSignIn"]
+- !private ["s7CVarArgP", "TabBarController"]
+- !private ["s7CVarArgP", "UIApplicationOpenURLOptionsKey"]
+- !private ["s7CVarArgP", "UIColor"]
+- !private ["s7CVarArgP", "UIScreen"]
+- !private ["s7CVarArgP", "UITabBar"]
+- !private ["s7CVarArgP", "UIWindow"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "appearance"]
+- ["s7CVarArgP", "application"]
+- ["s7CVarArgP", "applicationDidBecomeActive"]
+- ["s7CVarArgP", "applicationDidEnterBackground"]
+- ["s7CVarArgP", "applicationDidFinishLaunching"]
+- ["s7CVarArgP", "applicationDidReceiveMemoryWarning"]
+- ["s7CVarArgP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s7CVarArgP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s7CVarArgP", "applicationShouldRequestHealthAuthorization"]
+- ["s7CVarArgP", "applicationSignificantTimeChange"]
+- ["s7CVarArgP", "applicationWillEnterForeground"]
+- ["s7CVarArgP", "applicationWillResignActive"]
+- ["s7CVarArgP", "applicationWillTerminate"]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "clientID"]
+- !private ["s7CVarArgP", "handle"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "makeKeyAndVisible"]
+- !private ["s7CVarArgP", "rootViewController"]
+- !private ["s7CVarArgP", "sharedInstance"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "tintColor"]
+- ["s7CVarArgP", "window"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "GIDSignIn"]
+- !private ["s28CustomDebugStringConvertibleP", "TabBarController"]
+- !private ["s28CustomDebugStringConvertibleP", "UIApplicationOpenURLOptionsKey"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
+- !private ["s28CustomDebugStringConvertibleP", "UIScreen"]
+- !private ["s28CustomDebugStringConvertibleP", "UITabBar"]
+- !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "appearance"]
+- ["s28CustomDebugStringConvertibleP", "application"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidEnterBackground"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidFinishLaunching"]
+- ["s28CustomDebugStringConvertibleP", "applicationDidReceiveMemoryWarning"]
+- ["s28CustomDebugStringConvertibleP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s28CustomDebugStringConvertibleP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s28CustomDebugStringConvertibleP", "applicationShouldRequestHealthAuthorization"]
+- ["s28CustomDebugStringConvertibleP", "applicationSignificantTimeChange"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillEnterForeground"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
+- ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "clientID"]
+- !private ["s28CustomDebugStringConvertibleP", "handle"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "makeKeyAndVisible"]
+- !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "sharedInstance"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "tintColor"]
+- ["s28CustomDebugStringConvertibleP", "window"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "clientID"]
+- !private ["s17CustomReflectableP", "handle"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "GIDSignIn"]
+- !private ["s23CustomStringConvertibleP", "TabBarController"]
+- !private ["s23CustomStringConvertibleP", "UIApplicationOpenURLOptionsKey"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
+- !private ["s23CustomStringConvertibleP", "UIScreen"]
+- !private ["s23CustomStringConvertibleP", "UITabBar"]
+- !private ["s23CustomStringConvertibleP", "UIWindow"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appearance"]
+- ["s23CustomStringConvertibleP", "application"]
+- ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
+- ["s23CustomStringConvertibleP", "applicationDidEnterBackground"]
+- ["s23CustomStringConvertibleP", "applicationDidFinishLaunching"]
+- ["s23CustomStringConvertibleP", "applicationDidReceiveMemoryWarning"]
+- ["s23CustomStringConvertibleP", "applicationProtectedDataDidBecomeAvailable"]
+- ["s23CustomStringConvertibleP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["s23CustomStringConvertibleP", "applicationShouldRequestHealthAuthorization"]
+- ["s23CustomStringConvertibleP", "applicationSignificantTimeChange"]
+- ["s23CustomStringConvertibleP", "applicationWillEnterForeground"]
+- ["s23CustomStringConvertibleP", "applicationWillResignActive"]
+- ["s23CustomStringConvertibleP", "applicationWillTerminate"]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "clientID"]
+- !private ["s23CustomStringConvertibleP", "handle"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "makeKeyAndVisible"]
+- !private ["s23CustomStringConvertibleP", "rootViewController"]
+- !private ["s23CustomStringConvertibleP", "sharedInstance"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "tintColor"]
+- ["s23CustomStringConvertibleP", "window"]
+- !private ["Se", "clientID"]
+- !private ["Se", "handle"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "subscript"]
+- !private ["SD", "subscript"]
+- !private ["SE", "clientID"]
+- !private ["SE", "handle"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "GIDSignIn"]
+- !private ["SQ", "TabBarController"]
+- !private ["SQ", "UIApplicationOpenURLOptionsKey"]
+- !private ["SQ", "UIColor"]
+- !private ["SQ", "UIScreen"]
+- !private ["SQ", "UITabBar"]
+- !private ["SQ", "UIWindow"]
+- ["SQ", ""]
+- !private ["SQ", "annotation"]
+- !private ["SQ", "appearance"]
+- ["SQ", "application"]
+- ["SQ", "applicationDidBecomeActive"]
+- ["SQ", "applicationDidEnterBackground"]
+- ["SQ", "applicationDidFinishLaunching"]
+- ["SQ", "applicationDidReceiveMemoryWarning"]
+- ["SQ", "applicationProtectedDataDidBecomeAvailable"]
+- ["SQ", "applicationProtectedDataWillBecomeUnavailable"]
+- ["SQ", "applicationShouldRequestHealthAuthorization"]
+- ["SQ", "applicationSignificantTimeChange"]
+- ["SQ", "applicationWillEnterForeground"]
+- ["SQ", "applicationWillResignActive"]
+- ["SQ", "applicationWillTerminate"]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "bounds"]
+- !private ["SQ", "clientID"]
+- !private ["SQ", "handle"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "main"]
+- !private ["SQ", "makeKeyAndVisible"]
+- !private ["SQ", "rootViewController"]
+- !private ["SQ", "sharedInstance"]
+- !private ["SQ", "sourceApplication"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "tintColor"]
+- ["SQ", "window"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "clientID"]
+- !private ["s23ExpressibleByNilLiteralP", "handle"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["So9GIDSignInC", "clientID"]
+- !private ["So9GIDSignInC", "handle"]
+- !private ["So9GIDSignInC", "sharedInstance"]
+- !private ["SH", "GIDSignIn"]
+- !private ["SH", "TabBarController"]
+- !private ["SH", "UIApplicationOpenURLOptionsKey"]
+- !private ["SH", "UIColor"]
+- !private ["SH", "UIScreen"]
+- !private ["SH", "UITabBar"]
+- !private ["SH", "UIWindow"]
+- ["SH", ""]
+- !private ["SH", "annotation"]
+- !private ["SH", "appearance"]
+- ["SH", "application"]
+- ["SH", "applicationDidBecomeActive"]
+- ["SH", "applicationDidEnterBackground"]
+- ["SH", "applicationDidFinishLaunching"]
+- ["SH", "applicationDidReceiveMemoryWarning"]
+- ["SH", "applicationProtectedDataDidBecomeAvailable"]
+- ["SH", "applicationProtectedDataWillBecomeUnavailable"]
+- ["SH", "applicationShouldRequestHealthAuthorization"]
+- ["SH", "applicationSignificantTimeChange"]
+- ["SH", "applicationWillEnterForeground"]
+- ["SH", "applicationWillResignActive"]
+- ["SH", "applicationWillTerminate"]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "bounds"]
+- !private ["SH", "clientID"]
+- !private ["SH", "handle"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "main"]
+- !private ["SH", "makeKeyAndVisible"]
+- !private ["SH", "rootViewController"]
+- !private ["SH", "sharedInstance"]
+- !private ["SH", "sourceApplication"]
+- !private ["SH", "subscript"]
+- !private ["SH", "tintColor"]
+- ["SH", "window"]
+- !private ["So14IGListDiffableP", "GIDSignIn"]
+- !private ["So14IGListDiffableP", "TabBarController"]
+- !private ["So14IGListDiffableP", "UIApplicationOpenURLOptionsKey"]
+- !private ["So14IGListDiffableP", "UIColor"]
+- !private ["So14IGListDiffableP", "UIScreen"]
+- !private ["So14IGListDiffableP", "UITabBar"]
+- !private ["So14IGListDiffableP", "UIWindow"]
+- ["So14IGListDiffableP", ""]
+- !private ["So14IGListDiffableP", "appearance"]
+- ["So14IGListDiffableP", "application"]
+- ["So14IGListDiffableP", "applicationDidBecomeActive"]
+- ["So14IGListDiffableP", "applicationDidEnterBackground"]
+- ["So14IGListDiffableP", "applicationDidFinishLaunching"]
+- ["So14IGListDiffableP", "applicationDidReceiveMemoryWarning"]
+- ["So14IGListDiffableP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So14IGListDiffableP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So14IGListDiffableP", "applicationShouldRequestHealthAuthorization"]
+- ["So14IGListDiffableP", "applicationSignificantTimeChange"]
+- ["So14IGListDiffableP", "applicationWillEnterForeground"]
+- ["So14IGListDiffableP", "applicationWillResignActive"]
+- ["So14IGListDiffableP", "applicationWillTerminate"]
+- !private ["So14IGListDiffableP", "backgroundColor"]
+- !private ["So14IGListDiffableP", "bounds"]
+- !private ["So14IGListDiffableP", "clientID"]
+- !private ["So14IGListDiffableP", "handle"]
+- !private ["So14IGListDiffableP", "init"]
+- !private ["So14IGListDiffableP", "init"]
+- !private ["So14IGListDiffableP", "main"]
+- !private ["So14IGListDiffableP", "makeKeyAndVisible"]
+- !private ["So14IGListDiffableP", "rootViewController"]
+- !private ["So14IGListDiffableP", "sharedInstance"]
+- !private ["So14IGListDiffableP", "tintColor"]
+- ["So14IGListDiffableP", "window"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["So8NSCodingP", "appearance"]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "makeKeyAndVisible"]
+- !private ["So8NSCodingP", "rootViewController"]
+- !private ["So8NSCodingP", "tintColor"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "GIDSignIn"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "TabBarController"]
+- ["So8NSObjectC", "UIApplication"]
+- ["So8NSObjectC", "UIApplicationLaunchOptionsKey"]
+- ["So8NSObjectC", "UIApplicationOpenURLOptionsKey"]
+- !private ["So8NSObjectC", "UIColor"]
+- !private ["So8NSObjectC", "UIScreen"]
+- !private ["So8NSObjectC", "UITabBar"]
+- ["So8NSObjectC", "UIWindow"]
+- ["So8NSObjectC", "URL"]
+- !private ["So8NSObjectC", "appearance"]
+- ["So8NSObjectC", "application"]
+- ["So8NSObjectC", "applicationDidBecomeActive"]
+- ["So8NSObjectC", "applicationDidEnterBackground"]
+- ["So8NSObjectC", "applicationDidFinishLaunching"]
+- ["So8NSObjectC", "applicationDidReceiveMemoryWarning"]
+- ["So8NSObjectC", "applicationProtectedDataDidBecomeAvailable"]
+- ["So8NSObjectC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So8NSObjectC", "applicationShouldRequestHealthAuthorization"]
+- ["So8NSObjectC", "applicationSignificantTimeChange"]
+- ["So8NSObjectC", "applicationWillEnterForeground"]
+- ["So8NSObjectC", "applicationWillResignActive"]
+- ["So8NSObjectC", "applicationWillTerminate"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- !private ["So8NSObjectC", "bounds"]
+- !private ["So8NSObjectC", "clientID"]
+- !private ["So8NSObjectC", "handle"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "makeKeyAndVisible"]
+- !private ["So8NSObjectC", "rootViewController"]
+- !private ["So8NSObjectC", "sharedInstance"]
+- !private ["So8NSObjectC", "tintColor"]
+- ["So8NSObjectC", "window"]
+- !private ["So8NSObjectP", "GIDSignIn"]
+- !private ["So8NSObjectP", "TabBarController"]
+- !private ["So8NSObjectP", "UIApplicationOpenURLOptionsKey"]
+- !private ["So8NSObjectP", "UIColor"]
+- !private ["So8NSObjectP", "UIScreen"]
+- !private ["So8NSObjectP", "UITabBar"]
+- !private ["So8NSObjectP", "UIWindow"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "appearance"]
+- ["So8NSObjectP", "application"]
+- ["So8NSObjectP", "applicationDidBecomeActive"]
+- ["So8NSObjectP", "applicationDidEnterBackground"]
+- ["So8NSObjectP", "applicationDidFinishLaunching"]
+- ["So8NSObjectP", "applicationDidReceiveMemoryWarning"]
+- ["So8NSObjectP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So8NSObjectP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So8NSObjectP", "applicationShouldRequestHealthAuthorization"]
+- ["So8NSObjectP", "applicationSignificantTimeChange"]
+- ["So8NSObjectP", "applicationWillEnterForeground"]
+- ["So8NSObjectP", "applicationWillResignActive"]
+- ["So8NSObjectP", "applicationWillTerminate"]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "clientID"]
+- !private ["So8NSObjectP", "handle"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "main"]
+- !private ["So8NSObjectP", "makeKeyAndVisible"]
+- !private ["So8NSObjectP", "rootViewController"]
+- !private ["So8NSObjectP", "sharedInstance"]
+- !private ["So8NSObjectP", "tintColor"]
+- ["So8NSObjectP", "window"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So30UIApplicationOpenURLOptionsKeya", "annotation"]
+- !private ["So30UIApplicationOpenURLOptionsKeya", "sourceApplication"]
+- !private ["Sq", "clientID"]
+- !private ["Sq", "handle"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["SY", "annotation"]
+- !private ["SY", "sourceApplication"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["16Michigan_Hackers16TabBarControllerC", "deinit"]
+- !private ["16Michigan_Hackers16TabBarControllerC", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "appearance"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "makeKeyAndVisible"]
+- !private ["So29UIAccessibilityIdentificationP", "rootViewController"]
+- !private ["So29UIAccessibilityIdentificationP", "tintColor"]
+- !private ["So12UIAppearanceP", "appearance"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "makeKeyAndVisible"]
+- !private ["So12UIAppearanceP", "rootViewController"]
+- !private ["So12UIAppearanceP", "tintColor"]
+- !private ["So21UIAppearanceContainerP", "appearance"]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "makeKeyAndVisible"]
+- !private ["So21UIAppearanceContainerP", "rootViewController"]
+- !private ["So21UIAppearanceContainerP", "tintColor"]
+- !private ["So21UIApplicationDelegateP", "GIDSignIn"]
+- !private ["So21UIApplicationDelegateP", "TabBarController"]
+- !private ["So21UIApplicationDelegateP", "UIApplicationOpenURLOptionsKey"]
+- !private ["So21UIApplicationDelegateP", "UIColor"]
+- !private ["So21UIApplicationDelegateP", "UIScreen"]
+- !private ["So21UIApplicationDelegateP", "UITabBar"]
+- !private ["So21UIApplicationDelegateP", "UIWindow"]
+- ["So21UIApplicationDelegateP", ""]
+- ["So21UIApplicationDelegateP", "application"]
+- ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
+- ["So21UIApplicationDelegateP", "applicationDidEnterBackground"]
+- ["So21UIApplicationDelegateP", "applicationDidFinishLaunching"]
+- ["So21UIApplicationDelegateP", "applicationDidReceiveMemoryWarning"]
+- ["So21UIApplicationDelegateP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So21UIApplicationDelegateP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So21UIApplicationDelegateP", "applicationShouldRequestHealthAuthorization"]
+- ["So21UIApplicationDelegateP", "applicationSignificantTimeChange"]
+- ["So21UIApplicationDelegateP", "applicationWillEnterForeground"]
+- ["So21UIApplicationDelegateP", "applicationWillResignActive"]
+- ["So21UIApplicationDelegateP", "applicationWillTerminate"]
+- ["So21UIApplicationDelegateP", "window"]
+- !private ["So7UIColorC", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So17UICoordinateSpaceP", "appearance"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "makeKeyAndVisible"]
+- !private ["So17UICoordinateSpaceP", "rootViewController"]
+- !private ["So17UICoordinateSpaceP", "tintColor"]
+- !private ["So13UIDynamicItemP", "appearance"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "makeKeyAndVisible"]
+- !private ["So13UIDynamicItemP", "rootViewController"]
+- !private ["So13UIDynamicItemP", "tintColor"]
+- !private ["So18UIFocusEnvironmentP", "appearance"]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "makeKeyAndVisible"]
+- !private ["So18UIFocusEnvironmentP", "rootViewController"]
+- !private ["So18UIFocusEnvironmentP", "tintColor"]
+- !private ["So11UIFocusItemP", "appearance"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "makeKeyAndVisible"]
+- !private ["So11UIFocusItemP", "rootViewController"]
+- !private ["So11UIFocusItemP", "tintColor"]
+- !private ["So20UIFocusItemContainerP", "appearance"]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "makeKeyAndVisible"]
+- !private ["So20UIFocusItemContainerP", "rootViewController"]
+- !private ["So20UIFocusItemContainerP", "tintColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "GIDSignIn"]
+- !private ["So30UIPasteConfigurationSupportingP", "TabBarController"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIApplicationOpenURLOptionsKey"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIScreen"]
+- !private ["So30UIPasteConfigurationSupportingP", "UITabBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "appearance"]
+- ["So30UIPasteConfigurationSupportingP", "application"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidBecomeActive"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidEnterBackground"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidFinishLaunching"]
+- ["So30UIPasteConfigurationSupportingP", "applicationDidReceiveMemoryWarning"]
+- ["So30UIPasteConfigurationSupportingP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So30UIPasteConfigurationSupportingP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So30UIPasteConfigurationSupportingP", "applicationShouldRequestHealthAuthorization"]
+- ["So30UIPasteConfigurationSupportingP", "applicationSignificantTimeChange"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillEnterForeground"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillResignActive"]
+- ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "makeKeyAndVisible"]
+- !private ["So30UIPasteConfigurationSupportingP", "rootViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "tintColor"]
+- ["So30UIPasteConfigurationSupportingP", "window"]
+- ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "GIDSignIn"]
+- ["So11UIResponderC", "String"]
+- !private ["So11UIResponderC", "TabBarController"]
+- ["So11UIResponderC", "UIApplication"]
+- ["So11UIResponderC", "UIApplicationLaunchOptionsKey"]
+- ["So11UIResponderC", "UIApplicationOpenURLOptionsKey"]
+- !private ["So11UIResponderC", "UIColor"]
+- !private ["So11UIResponderC", "UIScreen"]
+- !private ["So11UIResponderC", "UITabBar"]
+- ["So11UIResponderC", "UIWindow"]
+- ["So11UIResponderC", "URL"]
+- ["So11UIResponderC", ""]
+- !private ["So11UIResponderC", "appearance"]
+- ["So11UIResponderC", "application"]
+- ["So11UIResponderC", "applicationDidBecomeActive"]
+- ["So11UIResponderC", "applicationDidEnterBackground"]
+- ["So11UIResponderC", "applicationDidFinishLaunching"]
+- ["So11UIResponderC", "applicationDidReceiveMemoryWarning"]
+- ["So11UIResponderC", "applicationProtectedDataDidBecomeAvailable"]
+- ["So11UIResponderC", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So11UIResponderC", "applicationShouldRequestHealthAuthorization"]
+- ["So11UIResponderC", "applicationSignificantTimeChange"]
+- ["So11UIResponderC", "applicationWillEnterForeground"]
+- ["So11UIResponderC", "applicationWillResignActive"]
+- ["So11UIResponderC", "applicationWillTerminate"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "makeKeyAndVisible"]
+- !private ["So11UIResponderC", "rootViewController"]
+- !private ["So11UIResponderC", "tintColor"]
+- ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "GIDSignIn"]
+- !private ["So30UIResponderStandardEditActionsP", "TabBarController"]
+- !private ["So30UIResponderStandardEditActionsP", "UIApplicationOpenURLOptionsKey"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- !private ["So30UIResponderStandardEditActionsP", "UIScreen"]
+- !private ["So30UIResponderStandardEditActionsP", "UITabBar"]
+- !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "appearance"]
+- ["So30UIResponderStandardEditActionsP", "application"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidBecomeActive"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidEnterBackground"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidFinishLaunching"]
+- ["So30UIResponderStandardEditActionsP", "applicationDidReceiveMemoryWarning"]
+- ["So30UIResponderStandardEditActionsP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So30UIResponderStandardEditActionsP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So30UIResponderStandardEditActionsP", "applicationShouldRequestHealthAuthorization"]
+- ["So30UIResponderStandardEditActionsP", "applicationSignificantTimeChange"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillEnterForeground"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
+- ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "makeKeyAndVisible"]
+- !private ["So30UIResponderStandardEditActionsP", "rootViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "tintColor"]
+- ["So30UIResponderStandardEditActionsP", "window"]
+- !private ["So8UIScreenC", "bounds"]
+- !private ["So8UIScreenC", "main"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "appearance"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "tintColor"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So8UITabBarC", "appearance"]
+- !private ["So8UITabBarC", "tintColor"]
+- !private ["So18UITabBarControllerC", "init"]
+- !private ["So16UITabBarDelegateP", "init"]
+- !private ["So18UITraitEnvironmentP", "appearance"]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "main"]
+- !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
+- !private ["So18UITraitEnvironmentP", "rootViewController"]
+- !private ["So18UITraitEnvironmentP", "tintColor"]
+- !private ["So23UIUserActivityRestoringP", "GIDSignIn"]
+- !private ["So23UIUserActivityRestoringP", "TabBarController"]
+- !private ["So23UIUserActivityRestoringP", "UIApplicationOpenURLOptionsKey"]
+- !private ["So23UIUserActivityRestoringP", "UIColor"]
+- !private ["So23UIUserActivityRestoringP", "UIScreen"]
+- !private ["So23UIUserActivityRestoringP", "UITabBar"]
+- !private ["So23UIUserActivityRestoringP", "UIWindow"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "appearance"]
+- ["So23UIUserActivityRestoringP", "application"]
+- ["So23UIUserActivityRestoringP", "applicationDidBecomeActive"]
+- ["So23UIUserActivityRestoringP", "applicationDidEnterBackground"]
+- ["So23UIUserActivityRestoringP", "applicationDidFinishLaunching"]
+- ["So23UIUserActivityRestoringP", "applicationDidReceiveMemoryWarning"]
+- ["So23UIUserActivityRestoringP", "applicationProtectedDataDidBecomeAvailable"]
+- ["So23UIUserActivityRestoringP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["So23UIUserActivityRestoringP", "applicationShouldRequestHealthAuthorization"]
+- ["So23UIUserActivityRestoringP", "applicationSignificantTimeChange"]
+- ["So23UIUserActivityRestoringP", "applicationWillEnterForeground"]
+- ["So23UIUserActivityRestoringP", "applicationWillResignActive"]
+- ["So23UIUserActivityRestoringP", "applicationWillTerminate"]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "makeKeyAndVisible"]
+- !private ["So23UIUserActivityRestoringP", "rootViewController"]
+- !private ["So23UIUserActivityRestoringP", "tintColor"]
+- ["So23UIUserActivityRestoringP", "window"]
+- !private ["So6UIViewC", "appearance"]
+- !private ["So6UIViewC", "backgroundColor"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "makeKeyAndVisible"]
+- !private ["So6UIViewC", "rootViewController"]
+- !private ["So6UIViewC", "tintColor"]
+- !private ["So16UIViewControllerC", "init"]
+- !private ["So8UIWindowC", "backgroundColor"]
+- !private ["So8UIWindowC", "init"]
+- !private ["So8UIWindowC", "makeKeyAndVisible"]
+- !private ["So8UIWindowC", "rootViewController"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "appearance"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "makeKeyAndVisible"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "tintColor"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "annotation"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "sourceApplication"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "GIDSignIn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "TabBarController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplicationOpenURLOptionsKey"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIScreen"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UITabBar"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "appearance"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "application"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidEnterBackground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidFinishLaunching"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidReceiveMemoryWarning"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationProtectedDataDidBecomeAvailable"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationProtectedDataWillBecomeUnavailable"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationShouldRequestHealthAuthorization"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationSignificantTimeChange"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillEnterForeground"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "clientID"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "handle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "makeKeyAndVisible"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sharedInstance"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- !private ["s21_ObjectiveCBridgeableP", "annotation"]
+- !private ["s21_ObjectiveCBridgeableP", "clientID"]
+- !private ["s21_ObjectiveCBridgeableP", "handle"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "sourceApplication"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s20_SwiftNewtypeWrapperP", "annotation"]
+- !private ["s20_SwiftNewtypeWrapperP", "sourceApplication"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "16Michigan_Hackers11AppDelegateC"
+- !private "SK"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "So9GIDSignInC"
+- "SH"
+- "So14IGListDiffableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So30UIApplicationOpenURLOptionsKeya"
+- !private "Sq"
+- !private "Sm"
+- !private "SY"
+- !private "ST"
+- !private "SS"
+- !private "Sy"
+- !private "16Michigan_Hackers16TabBarControllerC"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- "So21UIApplicationDelegateP"
+- !private "So7UIColorC"
+- !private "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So8UIScreenC"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So16UIStateRestoringP"
+- !private "So8UITabBarC"
+- !private "So18UITabBarControllerC"
+- !private "So16UITabBarDelegateP"
+- !private "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- !private "So16UIViewControllerC"
+- !private "So8UIWindowC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRBase64.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GoogleAPIClientForREST-umbrella.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-umbrella.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-umbrella.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListKit-umbrella.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBatchUpdateData.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRService.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRCalendarService.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcherService.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBindingSectionControllerDataSource.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterDataSource.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSupplementaryViewSource.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBindable.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/NSString+IGListDiffable.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/NSNumber+IGListDiffable.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDiffable.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRDateTime.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListWorkingRangeDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListUpdatingDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListScrollDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBindingSectionControllerSelectionDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListTransitionDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterUpdaterDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDisplayDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRURITemplate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDiff.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcherLogging.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListMoveIndexPath.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRFramework.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMGatherInputStream.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMReadMonitorInputStream.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRDuration.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRRuntimeCommon.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRCalendar.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionUploadFetcher.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListGenericSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListStackedSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSingleSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBindingSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterUpdateListener.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListReloadDataUpdater.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterUpdater.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapter.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRUtilities.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRDefines.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListMacros.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRUploadParameters.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRCalendarObjects.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListExperiments.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRObject.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRErrorObject.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDiffKit.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListKit.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRBatchResult.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListIndexPathResult.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListIndexSetResult.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMMIMEDocument.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAssert.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionViewDelegateLayout.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionViewLayout.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBatchContext.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionContext.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionView.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListMoveIndex.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRQuery.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRBatchQuery.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRCalendarQuery.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCompatibility.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/Google/Headers/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "70a72941b5e297c6e6355438b543cacf"

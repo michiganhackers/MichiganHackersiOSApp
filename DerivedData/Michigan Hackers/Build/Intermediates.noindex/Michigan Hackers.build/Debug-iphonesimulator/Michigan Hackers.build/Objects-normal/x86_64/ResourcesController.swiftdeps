@@ -1,0 +1,304 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ResourcesController"
+provides-nominal:
+- "16Michigan_Hackers19ResourcesControllerC"
+provides-member:
+- ["16Michigan_Hackers19ResourcesControllerC", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "FloatLiteralType"
+- "ResourcesController"
+- "UIViewController"
+- !private "_ColorLiteralType"
+depends-member:
+- !private ["So15CALayerDelegateP", "backgroundColor"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "backgroundColor"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s17CustomReflectableP", "backgroundColor"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "backgroundColor"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["Se", "backgroundColor"]
+- !private ["SE", "backgroundColor"]
+- ["SQ", ""]
+- !private ["SQ", "backgroundColor"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "view"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["s23ExpressibleByNilLiteralP", "backgroundColor"]
+- ["SH", ""]
+- !private ["SH", "backgroundColor"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "view"]
+- !private ["SH", "viewDidLoad"]
+- ["So14IGListDiffableP", ""]
+- !private ["So14IGListDiffableP", "backgroundColor"]
+- !private ["So14IGListDiffableP", "init"]
+- !private ["So14IGListDiffableP", "init"]
+- !private ["So14IGListDiffableP", "view"]
+- !private ["So14IGListDiffableP", "viewDidLoad"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "backgroundColor"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So8NSObjectC", "backgroundColor"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "view"]
+- ["So8NSObjectC", "viewDidLoad"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "backgroundColor"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["Sq", "backgroundColor"]
+- ["16Michigan_Hackers19ResourcesControllerC", "init"]
+- ["16Michigan_Hackers19ResourcesControllerC", "viewDidLoad"]
+- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
+- !private ["So12UIAppearanceP", "backgroundColor"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "backgroundColor"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So17UICoordinateSpaceP", "backgroundColor"]
+- !private ["So13UIDynamicItemP", "backgroundColor"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "backgroundColor"]
+- !private ["So20UIFocusItemContainerP", "backgroundColor"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So11UIResponderC", "backgroundColor"]
+- ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "view"]
+- ["So11UIResponderC", "viewDidLoad"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "backgroundColor"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "view"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So6UIViewC", "backgroundColor"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "view"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "backgroundColor"]
+depends-nominal:
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- "SH"
+- "So14IGListDiffableP"
+- "So8NSCodingP"
+- "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "Sq"
+- "16Michigan_Hackers19ResourcesControllerC"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRBase64.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GoogleAPIClientForREST-umbrella.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-umbrella.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-umbrella.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListKit-umbrella.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBatchUpdateData.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRService.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRCalendarService.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcherService.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBindingSectionControllerDataSource.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterDataSource.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSupplementaryViewSource.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBindable.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/NSString+IGListDiffable.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/NSNumber+IGListDiffable.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDiffable.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRDateTime.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListWorkingRangeDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListUpdatingDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListScrollDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBindingSectionControllerSelectionDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListTransitionDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterUpdaterDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDisplayDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRURITemplate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDiff.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcherLogging.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListMoveIndexPath.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRFramework.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMGatherInputStream.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMReadMonitorInputStream.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRDuration.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRRuntimeCommon.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRCalendar.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionUploadFetcher.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListGenericSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListStackedSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSingleSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBindingSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterUpdateListener.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListReloadDataUpdater.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterUpdater.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapter.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRUtilities.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRDefines.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListMacros.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRUploadParameters.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRCalendarObjects.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListExperiments.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRObject.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRErrorObject.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDiffKit.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListKit.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRBatchResult.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListIndexPathResult.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListIndexSetResult.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMMIMEDocument.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAssert.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionViewDelegateLayout.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionViewLayout.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBatchContext.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionContext.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionView.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListMoveIndex.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRQuery.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRBatchQuery.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRCalendarQuery.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCompatibility.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/Google/Headers/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "5087aae4abe3c9fe734a13a9754187d8"

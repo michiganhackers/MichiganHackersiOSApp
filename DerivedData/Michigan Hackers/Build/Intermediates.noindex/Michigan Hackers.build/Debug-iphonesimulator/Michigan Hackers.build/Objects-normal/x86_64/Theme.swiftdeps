@@ -1,0 +1,496 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Ultramagnetic"
+provides-nominal:
+provides-member:
+- ["So7UIColorC", ""]
+- ["So7UIColorC", "init"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "&"
+- !private "*"
+- !private "/"
+- !private ">>"
+- "AssignmentPrecedence"
+- "CGFloat"
+- !private "CharacterSet"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "Scanner"
+- "String"
+- !private "StringLiteralType"
+- "UIColor"
+- "UIFont"
+- !private "UInt32"
+- "Ultramagnetic"
+- !private "~="
+depends-member:
+- !private ["SK", "count"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "trimmingCharacters"]
+- !private ["SB", "init"]
+- !private ["Sz", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["12CoreGraphics7CGFloatV", "init"]
+- !private ["s7CVarArgP", "CGFloat"]
+- !private ["s7CVarArgP", "CharacterSet"]
+- !private ["s7CVarArgP", "Scanner"]
+- !private ["s7CVarArgP", "UInt32"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "scanHexInt32"]
+- !private ["s7CVarArgP", "trimmingCharacters"]
+- !private ["10Foundation12CharacterSetV", "alphanumerics"]
+- !private ["10Foundation12CharacterSetV", "inverted"]
+- !private ["Sl", "count"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "trimmingCharacters"]
+- !private ["SL", "count"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
+- !private ["SL", "trimmingCharacters"]
+- !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
+- !private ["s28CustomDebugStringConvertibleP", "CharacterSet"]
+- !private ["s28CustomDebugStringConvertibleP", "Scanner"]
+- !private ["s28CustomDebugStringConvertibleP", "UInt32"]
+- !private ["s28CustomDebugStringConvertibleP", "alphanumerics"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "inverted"]
+- !private ["s28CustomDebugStringConvertibleP", "scanHexInt32"]
+- !private ["s28CustomDebugStringConvertibleP", "trimmingCharacters"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "count"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "trimmingCharacters"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "trimmingCharacters"]
+- !private ["s23CustomStringConvertibleP", "CGFloat"]
+- !private ["s23CustomStringConvertibleP", "CharacterSet"]
+- !private ["s23CustomStringConvertibleP", "Scanner"]
+- !private ["s23CustomStringConvertibleP", "UInt32"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "alphanumerics"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "inverted"]
+- !private ["s23CustomStringConvertibleP", "scanHexInt32"]
+- !private ["s23CustomStringConvertibleP", "trimmingCharacters"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "alphanumerics"]
+- !private ["Se", "count"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "inverted"]
+- !private ["Se", "trimmingCharacters"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "alphanumerics"]
+- !private ["SE", "count"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "inverted"]
+- !private ["SE", "trimmingCharacters"]
+- !private ["SQ", "CGFloat"]
+- !private ["SQ", "CharacterSet"]
+- !private ["SQ", "Scanner"]
+- !private ["SQ", "UInt32"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "alphanumerics"]
+- !private ["SQ", "count"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "inverted"]
+- !private ["SQ", "scanHexInt32"]
+- !private ["SQ", "trimmingCharacters"]
+- !private ["s25ExpressibleByArrayLiteralP", "alphanumerics"]
+- !private ["s25ExpressibleByArrayLiteralP", "inverted"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "count"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "trimmingCharacters"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "count"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "trimmingCharacters"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "count"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "trimmingCharacters"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SF", "init"]
+- !private ["SH", "CGFloat"]
+- !private ["SH", "CharacterSet"]
+- !private ["SH", "Scanner"]
+- !private ["SH", "UInt32"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "alphanumerics"]
+- !private ["SH", "count"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "inverted"]
+- !private ["SH", "scanHexInt32"]
+- !private ["SH", "trimmingCharacters"]
+- !private ["So14IGListDiffableP", "CGFloat"]
+- !private ["So14IGListDiffableP", "CharacterSet"]
+- !private ["So14IGListDiffableP", "Scanner"]
+- !private ["So14IGListDiffableP", "UInt32"]
+- !private ["So14IGListDiffableP", "count"]
+- !private ["So14IGListDiffableP", "init"]
+- !private ["So14IGListDiffableP", "scanHexInt32"]
+- !private ["So14IGListDiffableP", "trimmingCharacters"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "count"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "trimmingCharacters"]
+- !private ["s10MirrorPathP", "count"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "trimmingCharacters"]
+- !private ["So8NSCodingP", "CGFloat"]
+- !private ["So8NSCodingP", "CharacterSet"]
+- !private ["So8NSCodingP", "Scanner"]
+- !private ["So8NSCodingP", "UInt32"]
+- !private ["So8NSCodingP", "count"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "trimmingCharacters"]
+- !private ["So9NSCopyingP", "CGFloat"]
+- !private ["So9NSCopyingP", "CharacterSet"]
+- !private ["So9NSCopyingP", "Scanner"]
+- !private ["So9NSCopyingP", "UInt32"]
+- !private ["So9NSCopyingP", "count"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "scanHexInt32"]
+- !private ["So9NSCopyingP", "trimmingCharacters"]
+- !private ["So21NSItemProviderReadingP", "CGFloat"]
+- !private ["So21NSItemProviderReadingP", "CharacterSet"]
+- !private ["So21NSItemProviderReadingP", "Scanner"]
+- !private ["So21NSItemProviderReadingP", "UInt32"]
+- !private ["So21NSItemProviderReadingP", "count"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "trimmingCharacters"]
+- !private ["So21NSItemProviderWritingP", "CGFloat"]
+- !private ["So21NSItemProviderWritingP", "CharacterSet"]
+- !private ["So21NSItemProviderWritingP", "Scanner"]
+- !private ["So21NSItemProviderWritingP", "UInt32"]
+- !private ["So21NSItemProviderWritingP", "count"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "trimmingCharacters"]
+- !private ["So16NSMutableCopyingP", "count"]
+- !private ["So16NSMutableCopyingP", "trimmingCharacters"]
+- !private ["So8NSObjectC", "CGFloat"]
+- !private ["So8NSObjectC", "CharacterSet"]
+- !private ["So8NSObjectC", "Scanner"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "UInt32"]
+- !private ["So8NSObjectC", "count"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "scanHexInt32"]
+- !private ["So8NSObjectC", "trimmingCharacters"]
+- !private ["So8NSObjectP", "CGFloat"]
+- !private ["So8NSObjectP", "CharacterSet"]
+- !private ["So8NSObjectP", "Scanner"]
+- !private ["So8NSObjectP", "UInt32"]
+- !private ["So8NSObjectP", "count"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "scanHexInt32"]
+- !private ["So8NSObjectP", "trimmingCharacters"]
+- !private ["So14NSSecureCodingP", "CGFloat"]
+- !private ["So14NSSecureCodingP", "CharacterSet"]
+- !private ["So14NSSecureCodingP", "Scanner"]
+- !private ["So14NSSecureCodingP", "UInt32"]
+- !private ["So14NSSecureCodingP", "count"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "trimmingCharacters"]
+- !private ["So8NSStringC", "count"]
+- !private ["So8NSStringC", "trimmingCharacters"]
+- !private ["Sj", "init"]
+- !private ["Sm", "count"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "trimmingCharacters"]
+- !private ["10Foundation20ReferenceConvertibleP", "alphanumerics"]
+- !private ["10Foundation20ReferenceConvertibleP", "inverted"]
+- !private ["So9NSScannerC", "init"]
+- !private ["So9NSScannerC", "scanHexInt32"]
+- !private ["ST", "count"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "trimmingCharacters"]
+- !private ["s10SetAlgebraP", "alphanumerics"]
+- !private ["s10SetAlgebraP", "inverted"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["SS", "count"]
+- !private ["SS", "init"]
+- !private ["SS", "init"]
+- !private ["SS", "trimmingCharacters"]
+- !private ["Sy", "count"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "trimmingCharacters"]
+- !private ["s16TextOutputStreamP", "count"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "trimmingCharacters"]
+- !private ["s20TextOutputStreamableP", "count"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "trimmingCharacters"]
+- !private ["So7UIColorC", "CGFloat"]
+- !private ["So7UIColorC", "CharacterSet"]
+- !private ["So7UIColorC", "Scanner"]
+- ["So7UIColorC", "String"]
+- !private ["So7UIColorC", "UInt32"]
+- ["So7UIColorC", "init"]
+- !private ["So6UIFontC", "init"]
+- !private ["s6UInt32V", "init"]
+- !private ["SU", "init"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "count"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "trimmingCharacters"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "count"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "trimmingCharacters"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "count"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "trimmingCharacters"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "count"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "trimmingCharacters"]
+- !private ["s26_ExpressibleByColorLiteralP", "CGFloat"]
+- !private ["s26_ExpressibleByColorLiteralP", "CharacterSet"]
+- !private ["s26_ExpressibleByColorLiteralP", "Scanner"]
+- !private ["s26_ExpressibleByColorLiteralP", "UInt32"]
+- !private ["s26_ExpressibleByColorLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "count"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "trimmingCharacters"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "trimmingCharacters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CharacterSet"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Scanner"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UInt32"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "count"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scanHexInt32"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "trimmingCharacters"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "alphanumerics"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "inverted"]
+- !private ["s21_ObjectiveCBridgeableP", "trimmingCharacters"]
+- !private ["s16_SwiftStringViewP", "count"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "trimmingCharacters"]
+depends-nominal:
+- !private "SK"
+- !private "SB"
+- !private "Sz"
+- !private "Sb"
+- !private "12CoreGraphics7CGFloatV"
+- !private "s7CVarArgP"
+- !private "10Foundation12CharacterSetV"
+- !private "Sl"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SF"
+- !private "SH"
+- !private "So14IGListDiffableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "Sj"
+- !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "So9NSScannerC"
+- !private "ST"
+- !private "s10SetAlgebraP"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- "So7UIColorC"
+- !private "So6UIFontC"
+- !private "s6UInt32V"
+- !private "SU"
+- !private "s18_BitwiseOperationsP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/JTAppleCalendar.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRBase64.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GoogleAPIClientForREST-umbrella.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-umbrella.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-umbrella.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListKit-umbrella.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBatchUpdateData.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRService.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRCalendarService.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcherService.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBindingSectionControllerDataSource.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterDataSource.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSupplementaryViewSource.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBindable.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/NSString+IGListDiffable.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/NSNumber+IGListDiffable.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDiffable.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRDateTime.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListWorkingRangeDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListUpdatingDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListScrollDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBindingSectionControllerSelectionDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListTransitionDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterUpdaterDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDisplayDelegate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRURITemplate.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDiff.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcherLogging.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListMoveIndexPath.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRFramework.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMGatherInputStream.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMReadMonitorInputStream.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRDuration.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRRuntimeCommon.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRCalendar.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionUploadFetcher.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListGenericSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListStackedSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSingleSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBindingSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListSectionController.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterUpdateListener.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListReloadDataUpdater.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapterUpdater.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAdapter.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRUtilities.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRDefines.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListMacros.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRUploadParameters.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRCalendarObjects.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListExperiments.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRObject.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRErrorObject.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListDiffKit.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListKit.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRBatchResult.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListIndexPathResult.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListIndexSetResult.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMMIMEDocument.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListAssert.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionViewDelegateLayout.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionViewLayout.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListBatchContext.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionContext.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCollectionView.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListMoveIndex.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRQuery.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRBatchQuery.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GTLRCalendarQuery.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListCompatibility.h"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/Firebase/Core/Sources/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Modules/module.modulemap"
+- "/Users/edwardhuang/Documents/MichiganHackersiOSApp/Pods/Google/Headers/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "26aebfb69c478a55a7a7419d6251053b"
