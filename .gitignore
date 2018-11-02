@@ -2,7 +2,7 @@
 ###############
 *.xcscheme
 *.xcuserstate
-*.plist
+.plist
 
 # Found from https://gist.github.com/octocat/9257657 for #
 # suggested file types to ignore #
