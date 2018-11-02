@@ -10,6 +10,8 @@ import UIKit
 import IGListKit
 import GoogleAPIClientForREST
 import GoogleSignIn
+import GTMSessionFetcher.GTMSessionFetcher
+import GTMSessionFetcher.GTMSessionFetcherService
 
 var eventList = [Event]()
 
