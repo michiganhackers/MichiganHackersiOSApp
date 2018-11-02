@@ -1,10 +1,8 @@
 /**
  * Copyright (c) 2016-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 #import <UIKit/UIKit.h>
@@ -108,7 +106,27 @@ NS_SWIFT_NAME(ListSectionController)
  @note The default implementation does nothing. **Calling super is not required.**
  */
 - (void)didUnhighlightItemAtIndex:(NSInteger)index;
+    
+/**
+ Identifies whether an object can be moved through interactive reordering.
+ 
+ @param index The index of the unhighlighted cell.
+ 
+ @note Interactive reordering is supported both for items within a single section, as well as for reordering sections
+ themselves when sections contain only one item. The default implementation returns false.
+ */
+- (BOOL)canMoveItemAtIndex:(NSInteger)index;
 
+/**
+ Notifies the section that a list object should move within a section as the result of interactive reordering.
+ 
+ @param sourceIndex The starting index of the object.
+ @param destinationIndex The ending index of the object.
+ 
+ @note this method must be implemented if interactive reordering is enabled.
+ */
+- (void)moveObjectFromIndex:(NSInteger)sourceIndex toIndex:(NSInteger)destinationIndex NS_AVAILABLE_IOS(9_0);
+    
 /**
  The view controller housing the adapter that created this section controller.
 

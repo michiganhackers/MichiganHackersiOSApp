@@ -1,10 +1,8 @@
 /**
  * Copyright (c) 2016-present, Facebook, Inc.
- * All rights reserved.
  *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
 
 #import "IGListBindingSectionController.h"
@@ -114,7 +112,7 @@ typedef NS_ENUM(NSInteger, IGListDiffingSectionState) {
     self.object = object;
 
     if (oldObject == nil) {
-        self.viewModels = [self.dataSource sectionController:self viewModelsForObject:object];
+        self.viewModels = [[self.dataSource sectionController:self viewModelsForObject:object] copy];
     } else {
         IGAssert([oldObject isEqualToDiffableObject:object],
                  @"Unequal objects %@ and %@ will cause IGListBindingSectionController to reload the entire section",
