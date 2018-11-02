@@ -8,13 +8,45 @@
 
 import UIKit
 import JTAppleCalendar
+import IGListKit
+import GoogleAPIClientForREST
+import GoogleSignIn
 
 class CalendarController: UIViewController {
+    private let service = GTLRCalendarService()
+    private let calendar = Calendar(identifier: .gregorian)
+    private var selectedDate: Date? = nil
+    
+    let calCellID = "CalendarCell"
+    let todaysDate = Date()
+    var calendarEvents: EventCollection = EventCollection()
+    
     lazy var orangeView: UIView = {
         let orange = UIView()
         orange.backgroundColor = UIColor(hexString: "F15D24")
-        orange.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height * 5/9)
+        orange.frame = CGRect(x: 0, y: 0, width: view.frame.width,
+                              height: view.frame.height * 5/9)
         return orange
+    }()
+    
+    // dailyEventsView is the view in which all the events on the selected day
+    // are displayed. It is filled using data requested from Google Calendar.
+    // Data is requested for an entire month when that month is viewed.
+    lazy var dailyEventsView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        let dailyEvents = UICollectionView(frame: .zero,
+                                           collectionViewLayout: layout)
+        dailyEvents.backgroundColor = UIColor.white
+        dailyEvents.translatesAutoresizingMaskIntoConstraints = false
+        return dailyEvents
+    }()
+    
+    lazy var adapter: ListAdapter = {
+        let updater = ListAdapterUpdater()
+        let adapter = ListAdapter(updater: updater, viewController: self)
+        adapter.collectionView = dailyEventsView
+        adapter.dataSource = self   
+        return adapter
     }()
     
     let formatter: DateFormatter = {
@@ -24,12 +56,6 @@ class CalendarController: UIViewController {
         form.locale = Calendar.current.locale
         return form
     }()
-    
-    let calCellID = "CalendarCell"
-    
-    let todaysDate = Date()
-    
-    var calendarEvents: [String:Event] = [:]
     
     lazy var dateStack: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [monthLabel, yearLabel])
@@ -94,22 +120,82 @@ class CalendarController: UIViewController {
         return col
     }()
     
+    // Helper for showing an alert. Useful for displaying error messages.
+    func showAlert(title : String, message: String) {
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: UIAlertControllerStyle.alert
+        )
+        let ok = UIAlertAction(
+            title: "OK",
+            style: UIAlertActionStyle.default,
+            handler: nil
+        )
+        alert.addAction(ok)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    // Get the list of events from the calendar for an entire month. The
+    // parameter dateInMonth can be any date within the desired month.
+    func fetchEventsForMonth(dateInMonth: Date) {
+        let monthYearSet: Set<Calendar.Component> = [.month, .year]
+        let components = calendar.dateComponents(monthYearSet, from: dateInMonth)
+        let monthBeginning = calendar.date(from: components)!
+        let monthEnd = calendar.date(byAdding: .month, value: 1, to: monthBeginning)!
+        fetchEvents(startDay: monthBeginning, endDay: monthEnd)
+    }
+    
+    // Get the list of events from the calendar for a specified date range. Note
+    // that only events from 12:00am on startDay until 12:00am on endDay are
+    // included (i.e. the events on endDay are *not* fetched).
+    func fetchEvents(startDay: Date, endDay: Date) {
+        let startDay = calendar.startOfDay(for: startDay)
+        let endDay = calendar.startOfDay(for: endDay)
+        let query = GTLRCalendarQuery_EventsList.query(withCalendarId:
+            "8n8u58ssric1hmm84jvkvl9d68@group.calendar.google.com")
+        query.maxResults = 200
+        query.timeMin = GTLRDateTime(date: startDay)
+        query.timeMax = GTLRDateTime(date: endDay)
+        query.singleEvents = true
+        query.orderBy = kGTLRCalendarOrderByStartTime
+        service.executeQuery(query, delegate: self, didFinish: #selector(
+            storeEvents(ticket:finishedWithObject:error:)))
+    }
+    
+    // Store the events to be shown
+    @objc func storeEvents(ticket: GTLRServiceTicket,finishedWithObject response: GTLRCalendar_Events, error: NSError?) {
+        if let error = error {
+            showAlert(title: "Error", message: error.localizedDescription)
+            return
+        }
+        
+        // Get the events, create Event objects and store them in the array
+        if let events = response.items, !events.isEmpty {
+            for event in events {
+                let start = event.start!.dateTime ?? event.start!.date!
+                guard let title = event.summary else { continue }
+                let location = event.location ?? ""
+                let details = event.descriptionProperty ?? ""
+                let eventObj = Event(title: title, date: DateFormatter.localizedString(from: start.date, dateStyle: .short, timeStyle: .short), location: location, details: details)
+                
+                calendarEvents.addEvent(date: start.date, event: eventObj)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         super.view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         setupViews()
         
-//        DispatchQueue.global().asyncAfter(deadline: .now()) {
-//            let serverObjects = self.getEventsFromArray()
-//            for (date, event) in serverObjects {
-//                let stringDate = self.formatter.string(from: date)
-//                self.calendarEvents[stringDate] = event
-//            }
-//            
-//            DispatchQueue.main.async {
-//                self.collectionView.reloadData()
-//            }
-//        }
+        // Assume the user is already signed in from the EventController.
+        // If this authentication is available, use it for making calendar requests.
+        if let user = GIDSignIn.sharedInstance()?.currentUser {
+            if let auth = user.authentication.fetcherAuthorizer() {
+                service.authorizer = auth
+            }
+        }
     }
     
     func setupViews() {
@@ -118,10 +204,16 @@ class CalendarController: UIViewController {
         orangeView.addSubview(collectionView)
         orangeView.addSubview(dateStack)
         orangeView.addSubview(weekStack)
+        view.addSubview(dailyEventsView)
         
         weekStack.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         weekStack.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         weekStack.topAnchor.constraint(equalTo: view.topAnchor, constant: 45).isActive = true
+        
+        dailyEventsView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        dailyEventsView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        dailyEventsView.topAnchor.constraint(equalTo: orangeView.bottomAnchor, constant: 15).isActive = true
+        dailyEventsView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         
         collectionView.register(DateCell.self, forCellWithReuseIdentifier: calCellID)
         
@@ -179,6 +271,11 @@ extension CalendarController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         configureCell(cell: cell, cellState: cellState)
+        
+        // When a cell is selected, update the selectedDate property and update
+        // the list of events at the bottom of the screen.
+        selectedDate = date
+        adapter.performUpdates(animated: true, completion: nil)
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
@@ -187,6 +284,7 @@ extension CalendarController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
     
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
         initializeCalendar(dateSegment: visibleDates)
+        fetchEventsForMonth(dateInMonth: visibleDates.monthDates[0].date)
     }
     
     func initializeCalendar(dateSegment: DateSegmentInfo) {
@@ -232,23 +330,22 @@ extension CalendarController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDa
     }
     
     func handleCellEvents(cell: DateCell, cellState: CellState) {
-        cell.dotView.isHidden = !calendarEvents.contains(where: {$0.key == formatter.string(from: cellState.date)})
+        cell.dotView.isHidden = !calendarEvents.hasEvents(date: cellState.date)
     }
 }
 
-//
-//extension CalendarController {
-//    // TODO: figure out how to change date format to "yyyy MM dd"
-//    func getEventsFromArray() -> [Date:Event] {
-//        formatter.dateFormat = "yyyy MM dd"
-//        var calEvents = [Date:Event]()
-//        for event in eventList {
-//            let date = formatter.date(from: event.date!)
-//            calEvents[date!] = event
-//        }
-//        return calEvents
-//    }
-//}
-//
-//
-
+// For ListKit
+extension CalendarController: ListAdapterDataSource {
+    func objects(for listAdapter: ListAdapter) -> [ListDiffable] {
+        if let selectedDate = selectedDate {
+            return calendarEvents.getEvents(date: selectedDate)
+        }
+        return []
+    }
+    func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
+        return EventSectionController()
+    }
+    func emptyView(for listAdapter: ListAdapter) -> UIView? {
+        return nil
+    }
+}
