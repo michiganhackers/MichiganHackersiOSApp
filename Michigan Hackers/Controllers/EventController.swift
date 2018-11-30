@@ -80,6 +80,7 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         
         super.viewDidLoad()
         view.addSubview(collectionView)
+        self.title = "Home"
         
         // Configure Google Sign-in.
         GIDSignIn.sharedInstance().delegate = self
@@ -103,15 +104,13 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
     }
     
     func setupUserProfileButton() {
-        userProfileButton.frame = CGRect(x: 10, y: 6, width: 40, height: 40)
+        userProfileButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         userProfileButton.backgroundColor = UIColor.white
-        userProfileButton.layer.cornerRadius = 0.5 * userProfileButton.bounds.size.width
         userProfileButton.layer.borderWidth = 1
         userProfileButton.layer.borderColor = UIColor.white.cgColor
         userProfileButton.addTarget(self, action: #selector(userProfileClick), for: .touchUpInside)
         let item1 = UIBarButtonItem(customView: userProfileButton)
         self.navigationItem.setLeftBarButtonItems([item1], animated: true)
-        
     }
     
     // Helper for showing an alert
