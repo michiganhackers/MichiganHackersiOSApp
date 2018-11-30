@@ -171,7 +171,7 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
     }
     
     @objc func userProfileClick() {
-        let switchToProfile = CalendarController()
+        let switchToProfile = UserProfileController()
         self.navigationController?.pushViewController(switchToProfile, animated: true)
     }
     
