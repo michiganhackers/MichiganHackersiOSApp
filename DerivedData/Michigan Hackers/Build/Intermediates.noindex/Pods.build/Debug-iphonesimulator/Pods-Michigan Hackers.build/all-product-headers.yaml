@@ -1,0 +1,726 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMOAuth2/GTMOAuth2.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMOAuth2-Swift.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMOAuth2/GTMOAuth2.framework/Headers/GTMOAuth2-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMOAuth2-umbrella.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/Target Support Files/GTMOAuth2/GTMOAuth2-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMOAuth2Authentication.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GTMOAuth2/Source/GTMOAuth2Authentication.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMOAuth2SignIn.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GTMOAuth2/Source/GTMOAuth2SignIn.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMOAuth2ViewControllerTouch.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GTMOAuth2/Source/Touch/GTMOAuth2ViewControllerTouch.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMOAuth2/GTMOAuth2.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GTMOAuth2.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMGatherInputStream.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GTMSessionFetcher/Source/GTMGatherInputStream.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMMIMEDocument.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GTMSessionFetcher/Source/GTMMIMEDocument.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMReadMonitorInputStream.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GTMSessionFetcher/Source/GTMReadMonitorInputStream.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher-Swift.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Headers/GTMSessionFetcher-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher-umbrella.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcher.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcherLogging.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionFetcherService.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMSessionUploadFetcher.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GTMSessionFetcher/GTMSessionFetcher.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTLRBase64.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Utilities/GTLRBase64.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRBatchQuery.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Objects/GTLRBatchQuery.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRBatchResult.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Objects/GTLRBatchResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRCalendar.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/GeneratedServices/Calendar/GTLRCalendar.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRCalendarObjects.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/GeneratedServices/Calendar/GTLRCalendarObjects.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRCalendarQuery.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/GeneratedServices/Calendar/GTLRCalendarQuery.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRCalendarService.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/GeneratedServices/Calendar/GTLRCalendarService.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRDateTime.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Objects/GTLRDateTime.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRDefines.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/GTLRDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRDuration.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Objects/GTLRDuration.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRErrorObject.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Objects/GTLRErrorObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRFramework.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Utilities/GTLRFramework.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRObject.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Objects/GTLRObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRQuery.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Objects/GTLRQuery.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRRuntimeCommon.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Objects/GTLRRuntimeCommon.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRService.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Objects/GTLRService.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRURITemplate.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Utilities/GTLRURITemplate.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRUploadParameters.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Objects/GTLRUploadParameters.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTLRUtilities.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleAPIClientForREST/Source/Utilities/GTLRUtilities.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleAPIClientForREST-Swift.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Headers/GoogleAPIClientForREST-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleAPIClientForREST-umbrella.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/Target Support Files/GoogleAPIClientForREST/GoogleAPIClientForREST-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleAPIClientForREST/GoogleAPIClientForREST.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GoogleAPIClientForREST.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "GTMDebugSelectorValidation.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleToolboxForMac/DebugUtils/GTMDebugSelectorValidation.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMDebugThreadValidation.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleToolboxForMac/DebugUtils/GTMDebugThreadValidation.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMDefines.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleToolboxForMac/GTMDefines.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMMethodCheck.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleToolboxForMac/DebugUtils/GTMMethodCheck.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSData+zlib.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleToolboxForMac/Foundation/GTMNSData+zlib.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSDictionary+URLArguments.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleToolboxForMac/Foundation/GTMNSDictionary+URLArguments.h"
+        },
+        {
+          'type': 'file',
+          'name': "GTMNSString+URLArguments.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/GoogleToolboxForMac/Foundation/GTMNSString+URLArguments.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-Swift.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers/GoogleToolboxForMac-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "GoogleToolboxForMac-umbrella.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/GoogleToolboxForMac/GoogleToolboxForMac.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GoogleToolboxForMac.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "IGListAdapter.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListAdapter.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListAdapterDataSource.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListAdapterDataSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListAdapterDelegate.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListAdapterDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListAdapterUpdateListener.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListAdapterUpdateListener.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListAdapterUpdater.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListAdapterUpdater.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListAdapterUpdaterDelegate.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListAdapterUpdaterDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListAssert.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/IGListAssert.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListBatchContext.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListBatchContext.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListBatchUpdateData.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/IGListBatchUpdateData.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListBindable.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListBindable.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListBindingSectionController.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListBindingSectionController.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListBindingSectionControllerDataSource.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListBindingSectionControllerDataSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListBindingSectionControllerSelectionDelegate.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListBindingSectionControllerSelectionDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListCollectionContext.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListCollectionContext.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListCollectionView.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListCollectionView.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListCollectionViewDelegateLayout.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListCollectionViewDelegateLayout.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListCollectionViewLayout.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListCollectionViewLayout.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListCompatibility.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/IGListCompatibility.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListDiff.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/IGListDiff.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListDiffKit.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/IGListDiffKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListDiffable.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/IGListDiffable.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListDisplayDelegate.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListDisplayDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListExperiments.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/IGListExperiments.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListGenericSectionController.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListGenericSectionController.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListIndexPathResult.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/IGListIndexPathResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListIndexSetResult.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/IGListIndexSetResult.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListKit-Swift.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Headers/IGListKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListKit-umbrella.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/Target Support Files/IGListKit/IGListKit-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListKit.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListMacros.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/IGListMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListMoveIndex.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/IGListMoveIndex.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListMoveIndexPath.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/IGListMoveIndexPath.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListReloadDataUpdater.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListReloadDataUpdater.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListScrollDelegate.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListScrollDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListSectionController.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListSectionController.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListSingleSectionController.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListSingleSectionController.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListStackedSectionController.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListStackedSectionController.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListSupplementaryViewSource.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListSupplementaryViewSource.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListTransitionDelegate.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListTransitionDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListUpdatingDelegate.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListUpdatingDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListWorkingRangeDelegate.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/IGListWorkingRangeDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSNumber+IGListDiffable.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/NSNumber+IGListDiffable.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+IGListDiffable.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/NSString+IGListDiffable.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/IGListKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/IGListKit/IGListKit.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "IGListAdapter+DebugDescription.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListAdapter+DebugDescription.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListAdapter+UICollectionView.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListAdapter+UICollectionView.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListAdapterInternal.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListAdapterInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListAdapterProxy.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListAdapterProxy.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListAdapterUpdater+DebugDescription.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListAdapterUpdater+DebugDescription.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListAdapterUpdaterInternal.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListAdapterUpdaterInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListArrayUtilsInternal.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/Internal/IGListArrayUtilsInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListBatchUpdateData+DebugDescription.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListBatchUpdateData+DebugDescription.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListBatchUpdateState.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListBatchUpdateState.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListBatchUpdates.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListBatchUpdates.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListBindingSectionController+DebugDescription.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListBindingSectionController+DebugDescription.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListCollectionViewLayoutInternal.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListCollectionViewLayoutInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListDebugger.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListDebugger.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListDebuggingUtilities.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListDebuggingUtilities.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListDisplayHandler.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListDisplayHandler.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListIndexPathResultInternal.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/Internal/IGListIndexPathResultInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListIndexSetResultInternal.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/Internal/IGListIndexSetResultInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListMoveIndexInternal.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/Internal/IGListMoveIndexInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListMoveIndexPathInternal.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Common/Internal/IGListMoveIndexPathInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListReloadIndexPath.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListReloadIndexPath.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListSectionControllerInternal.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListSectionControllerInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListSectionMap+DebugDescription.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListSectionMap+DebugDescription.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListSectionMap.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListSectionMap.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListStackedSectionControllerInternal.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListStackedSectionControllerInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "IGListWorkingRangeHandler.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/IGListWorkingRangeHandler.h"
+        },
+        {
+          'type': 'file',
+          'name': "UICollectionView+DebugDescription.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/UICollectionView+DebugDescription.h"
+        },
+        {
+          'type': 'file',
+          'name': "UICollectionView+IGListBatchUpdateData.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/UICollectionView+IGListBatchUpdateData.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIScrollView+IGListKit.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/IGListKit/Source/Internal/UIScrollView+IGListKit.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "JTAppleCalendar-Swift.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Headers/JTAppleCalendar-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "JTAppleCalendar-umbrella.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/Target Support Files/JTAppleCalendar/JTAppleCalendar-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/JTAppleCalendar/JTAppleCalendar.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/JTAppleCalendar.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/Pods_Michigan_Hackers.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-Michigan Hackers-umbrella.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/Pods/Target Support Files/Pods-Michigan Hackers/Pods-Michigan Hackers-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_Michigan_Hackers-Swift.h",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/Pods_Michigan_Hackers.framework/Headers/Pods_Michigan_Hackers-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Products/Debug-iphonesimulator/Pods_Michigan_Hackers.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/Benjamin/Desktop/MH/DerivedData/Michigan Hackers/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Pods-Michigan Hackers.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

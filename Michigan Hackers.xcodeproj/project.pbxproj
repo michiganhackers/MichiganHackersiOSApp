@@ -221,7 +221,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Connor Svrcek";
+				ORGANIZATIONNAME = "Michigan Hackers";
 				TargetAttributes = {
 					DB747BCD201AB36300F67C86 = {
 						CreatedOnToolsVersion = 9.2;

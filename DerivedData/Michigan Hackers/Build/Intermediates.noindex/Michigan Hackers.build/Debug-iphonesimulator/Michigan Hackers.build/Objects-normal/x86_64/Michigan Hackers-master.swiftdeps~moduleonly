@@ -1,0 +1,18 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "6a499bf9b5f4eee01ccebd531d2be2af"
+build_time: [1543537604, 139479000]
+inputs:
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/Models/DateSortable.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/Controllers/NotificationController.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/Models/NSObject+ListDiffable.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/Views/EventCell.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/Controllers/CalendarController.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/Systems/Theme.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/Views/DateCell.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/SectionControllers/EventSectionController.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/Controllers/ResourcesController.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/AppDelegate.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/Controllers/TabBarController.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/Systems/Helpers.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/Models/Event.swift": [1536274635, 0]
+  "/Users/Benjamin/Desktop/MH/Michigan Hackers/Controllers/EventController.swift": [1541727708, 0]

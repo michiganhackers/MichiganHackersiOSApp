@@ -1,0 +1,20 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "da64b5e3fe27e23062fffa5893bd9e15"
+build_time: [1543537591, 225497000]
+inputs:
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/CalendarEnums.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/CalendarStructs.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/GlobalFunctionsAndExtensions.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/InternalActionFunctions.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/InternalQueryFunctions.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/JTAppleCalendarDelegateProtocol.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/JTAppleCalendarLayout.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/JTAppleCalendarLayoutProtocol.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/JTAppleCalendarVariables.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/JTAppleCalendarView.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/JTAppleCell.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/JTAppleCollectionReusableView.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/JTCalendarProtocols.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/UICollectionViewDelegates.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/UIScrollViewDelegates.swift": [1536274977, 0]
+  "/Users/Benjamin/Desktop/MH/Pods/JTAppleCalendar/Sources/UserInteractionFunctions.swift": [1536274977, 0]

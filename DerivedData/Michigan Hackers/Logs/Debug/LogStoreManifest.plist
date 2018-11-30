@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>6E200FEC-9FCC-4772-8DEF-B656998E3F30</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>6E200FEC-9FCC-4772-8DEF-B656998E3F30.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Michigan Hackers project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Michigan Hackers</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Michigan Hackers</string>
+			<key>timeStartedRecording</key>
+			<real>565230410.58759999</real>
+			<key>timeStoppedRecording</key>
+			<real>565230576.461483</real>
+			<key>title</key>
+			<string>Debug Michigan Hackers</string>
+			<key>uniqueIdentifier</key>
+			<string>6E200FEC-9FCC-4772-8DEF-B656998E3F30</string>
+		</dict>
+		<key>CF45909D-80AC-4776-88BD-61D8A5B1D374</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>CF45909D-80AC-4776-88BD-61D8A5B1D374.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Michigan Hackers project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Michigan Hackers</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Debug Michigan Hackers</string>
+			<key>timeStartedRecording</key>
+			<real>562206146.49052405</real>
+			<key>timeStoppedRecording</key>
+			<real>562206159.99875104</real>
+			<key>title</key>
+			<string>Debug Michigan Hackers</string>
+			<key>uniqueIdentifier</key>
+			<string>CF45909D-80AC-4776-88BD-61D8A5B1D374</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

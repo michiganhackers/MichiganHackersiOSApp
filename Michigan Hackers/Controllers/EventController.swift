@@ -178,7 +178,6 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         } else {
             noEvents.text = "No upcoming events found."
         }
-        
         adapter.collectionView = self.collectionView
         adapter.dataSource = self
     }

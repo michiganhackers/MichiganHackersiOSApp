@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>2418FD8F-8CA9-4488-866E-95A9FD92D950</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2418FD8F-8CA9-4488-866E-95A9FD92D950.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Michigan Hackers project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Michigan Hackers</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build Michigan Hackers</string>
+			<key>timeStartedRecording</key>
+			<real>562206146.33130598</real>
+			<key>timeStoppedRecording</key>
+			<real>562206146.52422702</real>
+			<key>title</key>
+			<string>Build Michigan Hackers</string>
+			<key>uniqueIdentifier</key>
+			<string>2418FD8F-8CA9-4488-866E-95A9FD92D950</string>
+		</dict>
+		<key>87AFAE41-A80E-436C-A09F-ABD06D1F2E00</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>87AFAE41-A80E-436C-A09F-ABD06D1F2E00.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Michigan Hackers project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Michigan Hackers</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Michigan Hackers</string>
+			<key>timeStartedRecording</key>
+			<real>565230337.58284199</real>
+			<key>timeStoppedRecording</key>
+			<real>565230376.95708096</real>
+			<key>title</key>
+			<string>Build Michigan Hackers</string>
+			<key>uniqueIdentifier</key>
+			<string>87AFAE41-A80E-436C-A09F-ABD06D1F2E00</string>
+		</dict>
+		<key>B43F011C-D968-4CA4-9986-5793226DCA48</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>B43F011C-D968-4CA4-9986-5793226DCA48.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Michigan Hackers project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Michigan Hackers</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Clean Michigan Hackers</string>
+			<key>timeStartedRecording</key>
+			<real>565230387.38407004</real>
+			<key>timeStoppedRecording</key>
+			<real>565230387.86064994</real>
+			<key>title</key>
+			<string>Clean Michigan Hackers</string>
+			<key>uniqueIdentifier</key>
+			<string>B43F011C-D968-4CA4-9986-5793226DCA48</string>
+		</dict>
+		<key>C93B6AC8-44C1-43AC-AF83-9809066783AA</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C93B6AC8-44C1-43AC-AF83-9809066783AA.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>W</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Michigan Hackers project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Michigan Hackers</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Michigan Hackers</string>
+			<key>timeStartedRecording</key>
+			<real>565230388.73479402</real>
+			<key>timeStoppedRecording</key>
+			<real>565230410.66507494</real>
+			<key>title</key>
+			<string>Build Michigan Hackers</string>
+			<key>uniqueIdentifier</key>
+			<string>C93B6AC8-44C1-43AC-AF83-9809066783AA</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
