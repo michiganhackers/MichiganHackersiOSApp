@@ -7,12 +7,14 @@
 //
 
 import Firebase
+import FirebaseAuth
 import UIKit
 import IGListKit
 import GoogleAPIClientForREST
 import GoogleSignIn
 import GTMSessionFetcher.GTMSessionFetcher
 import GTMSessionFetcher.GTMSessionFetcherService
+
 var eventList = [Event]()
 var userProfileButton = UIButton()
 var image = UIImage()
