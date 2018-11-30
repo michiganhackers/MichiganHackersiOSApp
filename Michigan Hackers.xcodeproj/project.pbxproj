@@ -30,6 +30,8 @@
 		DBFF347C2023F1490020B7AA /* logo_square.png in Resources */ = {isa = PBXBuildFile; fileRef = DBFF347B2023F1490020B7AA /* logo_square.png */; };
 		DBFF347E2023F3F20020B7AA /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF347D2023F3F20020B7AA /* EventController.swift */; };
 		E9FA20CC218BE32A003E2C01 /* EventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA20CB218BE32A003E2C01 /* EventCollection.swift */; };
+		F36ED6D421B0CDEC00F689A1 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36ED6D321B0CDEB00F689A1 /* UserProfileController.swift */; };
+		F36ED6D621B0CE0600F689A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36ED6D521B0CE0600F689A1 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		DBFF347B2023F1490020B7AA /* logo_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_square.png; sourceTree = "<group>"; };
 		DBFF347D2023F3F20020B7AA /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		E9FA20CB218BE32A003E2C01 /* EventCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollection.swift; sourceTree = "<group>"; };
+		F36ED6D321B0CDEB00F689A1 /* UserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
+		F36ED6D521B0CE0600F689A1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F3F0D2FACDD711FC9E55948B /* Pods_Michigan_Hackers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Michigan_Hackers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,6 +140,8 @@
 				DBFF347D2023F3F20020B7AA /* EventController.swift */,
 				DB459C8D203F9673007A4D89 /* CalendarController.swift */,
 				DB459C8F203F99DD007A4D89 /* NotificationController.swift */,
+				F36ED6D321B0CDEB00F689A1 /* UserProfileController.swift */,
+				F36ED6D521B0CE0600F689A1 /* ViewController.swift */,
 				DB459C91203F9BCB007A4D89 /* ResourcesController.swift */,
 			);
 			path = Controllers;
@@ -350,7 +356,9 @@
 				DB08741620D9DC5C009EA756 /* DateCell.swift in Sources */,
 				DB902335206D887C00083D78 /* EventSectionController.swift in Sources */,
 				DB459C92203F9BCB007A4D89 /* ResourcesController.swift in Sources */,
+				F36ED6D621B0CE0600F689A1 /* ViewController.swift in Sources */,
 				DB747BD2201AB36300F67C86 /* AppDelegate.swift in Sources */,
+				F36ED6D421B0CDEC00F689A1 /* UserProfileController.swift in Sources */,
 				E9FA20CC218BE32A003E2C01 /* EventCollection.swift in Sources */,
 				DBBFEF17205B2EA500C802A9 /* TabBarController.swift in Sources */,
 				DBDB9E5E20BF499600859B7E /* Helpers.swift in Sources */,
