@@ -6,6 +6,7 @@
 //  Copyright © 2018 Connor Svrcek. All rights reserved.
 //
 
+import Firebase
 import UIKit
 import IGListKit
 import GoogleAPIClientForREST
@@ -137,12 +138,27 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
             showAlert(title: "Authentication Error", message: error.localizedDescription)
             self.service.authorizer = nil
         } else {
-            self.signInButton.isHidden = true
-            self.signInText.isHidden = true
-            self.noEvents.isHidden = true
-            self.stackView.isHidden = true
-            self.service.authorizer = user.authentication.fetcherAuthorizer()
-            fetchEvents()
+            // Once the user is signed into Google, the app must sign them into Firebase.
+            guard let authentication = user.authentication else {
+                showAlert(title: "Authetication Error", message: "Could not authenticate with Firebase")
+                return
+            }
+            // Once a Firebase credential is obtained, it is used to sign into Firebase.
+            let credential = FIRGoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                           accessToken: authentication.accessToken)
+            FIRAuth.auth()?.signIn(with: credential, completion: { (authResult, error) in
+                if let error = error {
+                    self.showAlert(title: "Authentication Error", message: error.localizedDescription)
+                }
+                // Once successfully signed into both Google and Firebase, the sign-in information is
+                //  hidden and events are fetched.
+                self.signInButton.isHidden = true
+                self.signInText.isHidden = true
+                self.noEvents.isHidden = true
+                self.stackView.isHidden = true
+                self.service.authorizer = user.authentication.fetcherAuthorizer()
+                self.fetchEvents()
+            })
         }
     }
     
