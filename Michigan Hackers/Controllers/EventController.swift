@@ -13,8 +13,9 @@ import GoogleAPIClientForREST
 import GoogleSignIn
 import GTMSessionFetcher.GTMSessionFetcher
 import GTMSessionFetcher.GTMSessionFetcherService
-
 var eventList = [Event]()
+var userProfileButton = UIButton()
+var image = UIImage()
 
 // Google Calendar/General ViewController stuff
 class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
@@ -81,12 +82,16 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         
         super.viewDidLoad()
         view.addSubview(collectionView)
+        self.title = "Home"
         
         // Configure Google Sign-in.
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().scopes = scopes
         GIDSignIn.sharedInstance().signInSilently()
+        
+        setupUserProfileButton()
+        view.addSubview(userProfileButton)
         
         view.addSubview(stackView)
         setupSignInStackView()
@@ -98,6 +103,16 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         collectionView.frame = view.bounds
+    }
+    
+    func setupUserProfileButton() {
+        userProfileButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        userProfileButton.backgroundColor = UIColor.white
+        userProfileButton.layer.borderWidth = 1
+        userProfileButton.layer.borderColor = UIColor.white.cgColor
+        userProfileButton.addTarget(self, action: #selector(userProfileClick), for: .touchUpInside)
+        let item1 = UIBarButtonItem(customView: userProfileButton)
+        self.navigationItem.setLeftBarButtonItems([item1], animated: true)
     }
     
     // Helper for showing an alert
@@ -127,7 +142,7 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         
         // Configure the refreshControl
         refreshControl.addTarget(self, action: #selector(fetchEvents), for: .valueChanged)
-
+        
         // Style the refreshControl
         refreshControl.tintColor = UIColor(hexString: "F15D24")
     }
@@ -158,8 +173,20 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
                 self.stackView.isHidden = true
                 self.service.authorizer = user.authentication.fetcherAuthorizer()
                 self.fetchEvents()
+                let url = user.profile.imageURL(withDimension: 40)
+
+                if let data = try? Data(contentsOf: url!)
+                {
+                    image = UIImage(data: data)!
+                    userProfileButton.setBackgroundImage(image, for: .normal)
+                }
             })
         }
+    }
+    
+    @objc func userProfileClick() {
+        let switchToProfile = UserProfileController()
+        self.navigationController?.pushViewController(switchToProfile, animated: true)
     }
     
     // Get the list of events from the calendar
@@ -211,19 +238,14 @@ extension EventController: ListAdapterDataSource {
         
         return items
     }
-
+    
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         return EventSectionController()
         // Add in more section controllers here if needed
     }
-
+    
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
         print("EMPTY VIEW")
         return nil
     }
 }
-
-
-
-
-
