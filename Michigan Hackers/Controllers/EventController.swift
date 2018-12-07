@@ -160,6 +160,7 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
             self.service.authorizer = user.authentication.fetcherAuthorizer()
             fetchEvents()
             
+            //Change withDimension value to change image quality
             let url = user.profile.imageURL(withDimension: 40)
             
             if let data = try? Data(contentsOf: url!)
