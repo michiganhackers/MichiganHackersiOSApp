@@ -29,6 +29,7 @@
 		DBDB9E5E20BF499600859B7E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDB9E5D20BF499600859B7E /* Helpers.swift */; };
 		DBFF347C2023F1490020B7AA /* logo_square.png in Resources */ = {isa = PBXBuildFile; fileRef = DBFF347B2023F1490020B7AA /* logo_square.png */; };
 		DBFF347E2023F3F20020B7AA /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF347D2023F3F20020B7AA /* EventController.swift */; };
+		E93D0DFE21BA007400D9BD3A /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D0DFD21BA007400D9BD3A /* SettingsController.swift */; };
 		E9FA20CC218BE32A003E2C01 /* EventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA20CB218BE32A003E2C01 /* EventCollection.swift */; };
 		F36ED6D421B0CDEC00F689A1 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36ED6D321B0CDEB00F689A1 /* UserProfileController.swift */; };
 		F36ED6D621B0CE0600F689A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36ED6D521B0CE0600F689A1 /* ViewController.swift */; };
@@ -64,6 +65,7 @@
 		DBDB9E5D20BF499600859B7E /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		DBFF347B2023F1490020B7AA /* logo_square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_square.png; sourceTree = "<group>"; };
 		DBFF347D2023F3F20020B7AA /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		E93D0DFD21BA007400D9BD3A /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		E9FA20CB218BE32A003E2C01 /* EventCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollection.swift; sourceTree = "<group>"; };
 		F36ED6D321B0CDEB00F689A1 /* UserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		F36ED6D521B0CE0600F689A1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				DBBFEF16205B2EA500C802A9 /* TabBarController.swift */,
+				E93D0DFD21BA007400D9BD3A /* SettingsController.swift */,
 				DBFF347D2023F3F20020B7AA /* EventController.swift */,
 				DB459C8D203F9673007A4D89 /* CalendarController.swift */,
 				DB459C8F203F99DD007A4D89 /* NotificationController.swift */,
@@ -347,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93D0DFE21BA007400D9BD3A /* SettingsController.swift in Sources */,
 				DBA652DB208A9AF800038558 /* DateSortable.swift in Sources */,
 				DB459C90203F99DD007A4D89 /* NotificationController.swift in Sources */,
 				DB31902E20BE1FB400F58E79 /* NSObject+ListDiffable.swift in Sources */,

@@ -25,7 +25,10 @@ class TabBarController: UITabBarController {
         let resources = ResourcesController()
         resources.tabBarItem = UITabBarItem(title: "Resources", image: #imageLiteral(resourceName: "icons8-book-50"), tag: 3)
         
-        let controllers = [events, calendar, notifications, resources]
+        let settings = SettingsController()
+        settings.tabBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "icons8-services-50"), tag: 4)
+        
+        let controllers = [events, calendar, notifications, resources, settings]
         viewControllers = controllers.map {UINavigationController(rootViewController: $0) }
     }
 }
