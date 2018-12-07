@@ -138,12 +138,19 @@ class CalendarController: UIViewController {
     
     // Get the list of events from the calendar for an entire month. The
     // parameter dateInMonth can be any date within the desired month.
+    // If any events in the month have already been loaded, they will not be
+    // reloaded.
     func fetchEventsForMonth(dateInMonth: Date) {
         let monthYearSet: Set<Calendar.Component> = [.month, .year]
         let components = calendar.dateComponents(monthYearSet, from: dateInMonth)
         let monthBeginning = calendar.date(from: components)!
         let monthEnd = calendar.date(byAdding: .month, value: 1, to: monthBeginning)!
-        fetchEvents(startDay: monthBeginning, endDay: monthEnd)
+        
+        // Ensure that the month was not already added.
+        formatter.dateFormat = "YYYYMM"
+        if !calendarEvents.wasEventSetAdded(formatter.string(from: monthBeginning)) {
+            fetchEvents(startDay: monthBeginning, endDay: monthEnd)
+        }
     }
     
     // Get the list of events from the calendar for a specified date range. Note
@@ -163,7 +170,8 @@ class CalendarController: UIViewController {
             storeEvents(ticket:finishedWithObject:error:)))
     }
     
-    // Store the events to be shown
+    // Store the events to be shown.
+    // Events in an already-loaded month are not stored.
     @objc func storeEvents(ticket: GTLRServiceTicket,finishedWithObject response: GTLRCalendar_Events, error: NSError?) {
         if let error = error {
             showAlert(title: "Error", message: error.localizedDescription)
@@ -172,8 +180,15 @@ class CalendarController: UIViewController {
         
         // Get the events, create Event objects and store them in the array
         if let events = response.items, !events.isEmpty {
+            
+            formatter.dateFormat = "YYYYMM"
             for event in events {
                 let start = event.start!.dateTime ?? event.start!.date!
+                
+                // Ensure that the event is not in an already-added month.
+                let eventMonth = formatter.string(from: start.date)
+                guard !calendarEvents.wasEventSetAdded(eventMonth) else { continue }
+                
                 guard let title = event.summary else { continue }
                 let location = event.location ?? ""
                 let details = event.descriptionProperty ?? ""
@@ -181,6 +196,11 @@ class CalendarController: UIViewController {
                 
                 calendarEvents.addEvent(date: start.date, event: eventObj)
             }
+            
+            // Mark the month of events as added so it will not be rerequested every
+            //  time the calendar changes months.
+            let firstDateStart = events[0].start!.dateTime ?? events[0].start!.date!
+            calendarEvents.addEventSet(formatter.string(from: firstDateStart.date))
         }
     }
     

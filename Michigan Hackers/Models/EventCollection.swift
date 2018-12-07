@@ -14,6 +14,7 @@ import Foundation
 // parameter in all methods must follow the format "yyyy MM dd".
 class EventCollection: NSObject {
     private var eventsByDay: [String: [Event]] = [:]
+    private var addedEventSets: Set<String> = []
     private let formatter: DateFormatter = {
         let form = DateFormatter()
         form.dateFormat = "yyyy MM dd"
@@ -56,5 +57,15 @@ class EventCollection: NSObject {
     
     func hasEvents(date: Date) -> Bool {
         return hasEvents(day: formatter.string(from: date))
+    }
+    
+    // Mark a given set of events as added
+    func addEventSet(_ name: String) {
+        addedEventSets.insert(name)
+    }
+    
+    // Check whether a given set of events has already been added
+    func wasEventSetAdded(_ name: String) -> Bool {
+        return addedEventSets.contains(name)
     }
 }
