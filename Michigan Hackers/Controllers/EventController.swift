@@ -64,6 +64,20 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         return stack
     }()
     
+    // This function resets the EventController to a logged-out state.
+    func updateToLoggedOutState() {
+        eventList.removeAll()
+        adapter.performUpdates(animated: true, completion: nil)
+        
+        userProfileButton.setBackgroundImage(nil, for: .normal)
+        userProfileButton.isEnabled = false
+        self.signInButton.isHidden = false
+        self.signInText.isHidden = false
+        self.noEvents.isHidden = false
+        self.stackView.isHidden = false
+        // TODO: Login button does not reappear
+    }
+    
     func setupSignInStackView() {
         stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
@@ -109,12 +123,15 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
     
     func setupUserProfileButton() {
         userProfileButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        userProfileButton.backgroundColor = UIColor.white
+        userProfileButton.backgroundColor = UIColor.clear
         userProfileButton.layer.borderWidth = 1
         userProfileButton.layer.borderColor = UIColor.white.cgColor
         userProfileButton.addTarget(self, action: #selector(userProfileClick), for: .touchUpInside)
         let item1 = UIBarButtonItem(customView: userProfileButton)
         self.navigationItem.setLeftBarButtonItems([item1], animated: true)
+        
+        // Don't enable the user profile button until the user logs in.
+        userProfileButton.isEnabled = false
     }
     
     // Helper for showing an alert
@@ -181,6 +198,7 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
                 {
                     image = UIImage(data: data)!
                     userProfileButton.setBackgroundImage(image, for: .normal)
+                    userProfileButton.isEnabled = true
                 }
             })
         }
