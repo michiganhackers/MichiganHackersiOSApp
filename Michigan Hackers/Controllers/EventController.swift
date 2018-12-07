@@ -73,9 +73,7 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         userProfileButton.isEnabled = false
         self.signInButton.isHidden = false
         self.signInText.isHidden = false
-        self.noEvents.isHidden = false
         self.stackView.isHidden = false
-        // TODO: Login button does not reappear
     }
     
     func setupSignInStackView() {
@@ -84,7 +82,10 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
     }
     
     lazy var adapter: ListAdapter = {
-        return ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 0)
+        let adapter = ListAdapter(updater: ListAdapterUpdater(), viewController: self, workingRangeSize: 0)
+        adapter.collectionView = self.collectionView
+        adapter.dataSource = self
+        return adapter
     }()
     
     let collectionView: UICollectionView = {
@@ -243,9 +244,7 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         } else {
             noEvents.text = "No upcoming events found."
         }
-        
-        adapter.collectionView = self.collectionView
-        adapter.dataSource = self
+        adapter.performUpdates(animated: true, completion: nil)
     }
 }
 
