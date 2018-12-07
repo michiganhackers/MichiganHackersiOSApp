@@ -107,7 +107,9 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
         userProfileButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         userProfileButton.backgroundColor = UIColor.white
         userProfileButton.layer.borderWidth = 1
+        userProfileButton.layer.cornerRadius = 20
         userProfileButton.layer.borderColor = UIColor.white.cgColor
+        userProfileButton.layer.masksToBounds = true
         userProfileButton.addTarget(self, action: #selector(userProfileClick), for: .touchUpInside)
         let item1 = UIBarButtonItem(customView: userProfileButton)
         self.navigationItem.setLeftBarButtonItems([item1], animated: true)
@@ -164,6 +166,7 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
             {
                 image = UIImage(data: data)!
                 userProfileButton.setBackgroundImage(image, for: .normal)
+                profilePic.image = image
             }
             
         }
