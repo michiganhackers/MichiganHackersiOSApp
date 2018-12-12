@@ -13,28 +13,48 @@ import FirebaseAuth
 class SettingsController: UITableViewController  {
     
     private let eventsTabIndex = 0
+    private let settingsHandler = SettingsHandler()
     private lazy var isLoggedIn = {
         return GIDSignIn.sharedInstance()?.currentUser != nil
     }()
     
-    // There are two sections in the Settings TableView:
-    //  0. Settings/help ("drillDown") section
-    //  1. Log out ("logOut") section
-    //    TODO: Don't show the log out section if the user isn't logged in
+    // There are three sections in the Settings TableView:
+    //  0. Toggle-switch ("settings") section
+    //  1. Help ("drillDown") section
+    //  2. Log out ("logOut") section
+    private let settingsSection = [
+        "Enable notifications"
+    ]
     private let drillDownSection = [
-        "Settings",
         "Help"
     ]
     private let logOutSection = [
         "Log Out"
     ]
     
-    // The index of the logOut section in the tableSections array
-    private let logOutSectionID = 1
+    lazy var notificationsSwitch: UISwitch = {
+        let notifEnabled = UISwitch(frame: .zero)
+        notifEnabled.addTarget(self, action: #selector(onNotificationsSwitchChanged), for: UIControl.Event.valueChanged)
+        return notifEnabled
+    }()
+    
+    lazy var settingsSwitches = {
+        return [notificationsSwitch]
+    }()
     
     lazy var tableSections = {
-        return [drillDownSection, logOutSection]
+        return [settingsSection, drillDownSection, logOutSection]
     }()
+    
+    // The IndexPaths of various tappable cells
+    private let helpIndexPath = IndexPath(row: 0, section: 1)
+    private let logOutIndexPath = IndexPath(row: 0, section: 2)
+    
+    // The index of the settings section in the tableSections array
+    private let settingsSectionID = 0
+    
+    // The index of the logOut section in the tableSections array
+    private let logOutSectionID = 2
     
     private func getTableSections() -> [[String]] {
         if isLoggedIn {
@@ -45,6 +65,14 @@ class SettingsController: UITableViewController  {
     
     private func getSection(_ section: Int) -> [String] {
         return tableSections[section]
+    }
+    
+    @objc private func onNotificationsSwitchChanged() {
+        settingsHandler.setNotificationsEnabled(val: notificationsSwitch.isOn)
+    }
+    
+    private func updateSettingsSwitches() {
+        notificationsSwitch.isOn = settingsHandler.getNotificationsEnabled()
     }
     
     // Helper for showing an alert. Useful for displaying error messages.
@@ -91,6 +119,11 @@ class SettingsController: UITableViewController  {
             tableView.reloadData()
         }
     }
+    
+    private func goToHelp() {
+        // TODO: Do we need a help screen? If so, what information should be on
+        // it?
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,6 +133,8 @@ class SettingsController: UITableViewController  {
         super.view.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.9372549057, blue: 0.9568627477, alpha: 1)
         
         self.title = "Settings"
+        
+        updateSettingsSwitches()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -116,8 +151,12 @@ class SettingsController: UITableViewController  {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "\(indexPath.section)_\(isLoggedIn)")
         cell.textLabel?.text = cellText
         
+        if indexPath.section == settingsSectionID {
+            cell.accessoryView = settingsSwitches[indexPath.row]
+        }
+        
         // Add special styling for the log out button.
-        if indexPath.section == logOutSectionID && isLoggedIn {
+        if indexPath == logOutIndexPath && isLoggedIn {
             cell.textLabel?.textColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
             cell.textLabel?.textAlignment = .center
         }
@@ -134,8 +173,14 @@ class SettingsController: UITableViewController  {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == logOutSectionID {
+        switch indexPath {
+        case logOutIndexPath:
             logOut()
+        case helpIndexPath:
+            goToHelp()
+        default:
+            break
+            // Do nothing if none of the tappable cells are tapped.
         }
     }
     
