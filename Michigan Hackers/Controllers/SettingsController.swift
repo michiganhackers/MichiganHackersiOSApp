@@ -172,6 +172,15 @@ class SettingsController: UITableViewController  {
         return getSection(section).count
     }
     
+    override func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        switch indexPath {
+        case logOutIndexPath, helpIndexPath:
+            return true
+        default:
+            return false
+        }
+    }
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath {
         case logOutIndexPath:
