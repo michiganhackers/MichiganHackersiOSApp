@@ -9,6 +9,7 @@ pod 'Google/SignIn'
 pod 'JTAppleCalendar', '~> 7.0'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Database'
 
 # replace sample project path with your personalized project path
 project './Michigan Hackers.xcodeproj'

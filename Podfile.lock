@@ -5,6 +5,9 @@ PODS:
   - Firebase/Core (3.17.0):
     - FirebaseAnalytics (= 3.9.0)
     - FirebaseCore (= 3.6.0)
+  - Firebase/Database (3.17.0):
+    - Firebase/Core
+    - FirebaseDatabase (= 3.1.2)
   - FirebaseAnalytics (3.9.0):
     - FirebaseCore (~> 3.6)
     - FirebaseInstanceID (~> 1.0)
@@ -15,6 +18,8 @@ PODS:
     - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseCore (3.6.0):
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseDatabase (3.1.2):
+    - FirebaseAnalytics (~> 3.7)
   - FirebaseInstanceID (1.0.10):
     - FirebaseCore (~> 3.6)
   - Google/Core (3.1.0):
@@ -22,33 +27,30 @@ PODS:
   - Google/SignIn (3.1.0):
     - Google/Core
     - GoogleSignIn (~> 4.0)
-  - GoogleAPIClientForREST/Calendar (1.3.6):
+  - GoogleAPIClientForREST/Calendar (1.3.7):
     - GoogleAPIClientForREST/Core
     - GTMSessionFetcher (>= 1.1.7)
-  - GoogleAPIClientForREST/Core (1.3.6):
+  - GoogleAPIClientForREST/Core (1.3.7):
     - GTMSessionFetcher (>= 1.1.7)
-  - GoogleSignIn (4.3.0):
+  - GoogleSignIn (4.4.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
-    - GTMOAuth2 (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleToolboxForMac/DebugUtils (2.1.4):
-    - GoogleToolboxForMac/Defines (= 2.1.4)
-  - GoogleToolboxForMac/Defines (2.1.4)
-  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
-    - GoogleToolboxForMac/Defines (= 2.1.4)
-  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4)":
-    - GoogleToolboxForMac/DebugUtils (= 2.1.4)
-    - GoogleToolboxForMac/Defines (= 2.1.4)
-    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.4)"
-  - "GoogleToolboxForMac/NSString+URLArguments (2.1.4)"
-  - GTMOAuth2 (1.1.6):
-    - GTMSessionFetcher (~> 1.1)
-  - GTMSessionFetcher (1.2.0):
-    - GTMSessionFetcher/Full (= 1.2.0)
-  - GTMSessionFetcher/Core (1.2.0)
-  - GTMSessionFetcher/Full (1.2.0):
-    - GTMSessionFetcher/Core (= 1.2.0)
+  - GoogleToolboxForMac/DebugUtils (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - "GoogleToolboxForMac/NSData+zlib (2.2.0)":
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.0)":
+    - GoogleToolboxForMac/DebugUtils (= 2.2.0)
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
+  - GTMSessionFetcher (1.2.1):
+    - GTMSessionFetcher/Full (= 1.2.1)
+  - GTMSessionFetcher/Core (1.2.1)
+  - GTMSessionFetcher/Full (1.2.1):
+    - GTMSessionFetcher/Core (= 1.2.1)
   - IGListKit (3.4.0):
     - IGListKit/Default (= 3.4.0)
   - IGListKit/Default (3.4.0):
@@ -59,6 +61,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
+  - Firebase/Database
   - Google/SignIn
   - GoogleAPIClientForREST/Calendar
   - IGListKit (~> 3.0)
@@ -70,12 +73,12 @@ SPEC REPOS:
     - FirebaseAnalytics
     - FirebaseAuth
     - FirebaseCore
+    - FirebaseDatabase
     - FirebaseInstanceID
     - Google
     - GoogleAPIClientForREST
     - GoogleSignIn
     - GoogleToolboxForMac
-    - GTMOAuth2
     - GTMSessionFetcher
     - IGListKit
     - JTAppleCalendar
@@ -85,16 +88,16 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
   FirebaseAuth: cc8a1824170adbd351edb7f994490a3fb5c18be6
   FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
+  FirebaseDatabase: 05c96d7b43a7368dc91c07791adb49683e1738d1
   FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
   Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
-  GoogleAPIClientForREST: 5b95b38a0fa912e8ac7bdcf9e124578ef1a61bf2
-  GoogleSignIn: 11183592dc63e105475c7305a325045ff95e02b7
-  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
-  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
-  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  GoogleAPIClientForREST: 825503f12cb5824601cf526cf06d81a1cea4afd9
+  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
 
-PODFILE CHECKSUM: 58798b6fcb329f7f8cca5ebacabb4974a3c0d024
+PODFILE CHECKSUM: 16187167f08119705f3c73a1bcb8bd9538c06b3f
 
 COCOAPODS: 1.5.3

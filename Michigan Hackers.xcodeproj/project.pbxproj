@@ -31,6 +31,7 @@
 		DBFF347E2023F3F20020B7AA /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFF347D2023F3F20020B7AA /* EventController.swift */; };
 		E93D0DFE21BA007400D9BD3A /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93D0DFD21BA007400D9BD3A /* SettingsController.swift */; };
 		E9AD38CC21C0C80400911444 /* SettingsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AD38CB21C0C80400911444 /* SettingsHandler.swift */; };
+		E9E555A021E827B5000E5D6A /* ProfileDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E5559F21E827B5000E5D6A /* ProfileDataHandler.swift */; };
 		E9FA20CC218BE32A003E2C01 /* EventCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FA20CB218BE32A003E2C01 /* EventCollection.swift */; };
 		F36ED6D421B0CDEC00F689A1 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36ED6D321B0CDEB00F689A1 /* UserProfileController.swift */; };
 		F36ED6D621B0CE0600F689A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36ED6D521B0CE0600F689A1 /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 		DBFF347D2023F3F20020B7AA /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		E93D0DFD21BA007400D9BD3A /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		E9AD38CB21C0C80400911444 /* SettingsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHandler.swift; sourceTree = "<group>"; };
+		E9E5559F21E827B5000E5D6A /* ProfileDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataHandler.swift; sourceTree = "<group>"; };
 		E9FA20CB218BE32A003E2C01 /* EventCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollection.swift; sourceTree = "<group>"; };
 		F36ED6D321B0CDEB00F689A1 /* UserProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		F36ED6D521B0CE0600F689A1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				E9FA20CB218BE32A003E2C01 /* EventCollection.swift */,
 				DB31902D20BE1FB400F58E79 /* NSObject+ListDiffable.swift */,
 				E9AD38CB21C0C80400911444 /* SettingsHandler.swift */,
+				E9E5559F21E827B5000E5D6A /* ProfileDataHandler.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,7 +310,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Michigan Hackers/Pods-Michigan Hackers-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
@@ -316,7 +318,6 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
@@ -361,6 +362,7 @@
 				DB0B094A208ACCC100486C5C /* EventCell.swift in Sources */,
 				DB459C8E203F9673007A4D89 /* CalendarController.swift in Sources */,
 				DB0B094D208AD39300486C5C /* Theme.swift in Sources */,
+				E9E555A021E827B5000E5D6A /* ProfileDataHandler.swift in Sources */,
 				DB08741620D9DC5C009EA756 /* DateCell.swift in Sources */,
 				DB902335206D887C00083D78 /* EventSectionController.swift in Sources */,
 				DB459C92203F9BCB007A4D89 /* ResourcesController.swift in Sources */,
