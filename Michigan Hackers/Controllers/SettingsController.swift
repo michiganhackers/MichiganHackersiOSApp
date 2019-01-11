@@ -93,9 +93,9 @@ class SettingsController: UITableViewController  {
     
     private func logOut() {
         // Sign out of Firebase.
-        let firebaseAuth = FIRAuth.auth()
+        let firebaseAuth = Auth.auth()
         do {
-            try firebaseAuth?.signOut()
+            try firebaseAuth.signOut()
         } catch let signOutError as NSError {
             showAlert(title: "Error Signing Out",
                       message: signOutError.localizedDescription)

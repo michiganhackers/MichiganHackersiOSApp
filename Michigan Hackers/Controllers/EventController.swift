@@ -179,9 +179,9 @@ class EventController: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate 
                 return
             }
             // Once a Firebase credential is obtained, it is used to sign into Firebase.
-            let credential = FIRGoogleAuthProvider.credential(withIDToken: authentication.idToken,
+            let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
                                                            accessToken: authentication.accessToken)
-            FIRAuth.auth()?.signIn(with: credential, completion: { (authResult, error) in
+            Auth.auth().signIn(with: credential, completion: { (authResult, error) in
                 if let error = error {
                     self.showAlert(title: "Authentication Error", message: error.localizedDescription)
                 }
