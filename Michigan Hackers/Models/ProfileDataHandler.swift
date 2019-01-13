@@ -14,8 +14,6 @@ class ProfileDataHandler: NSObject {
     var membersRef: CollectionReference!
     var db: Firestore!
     
-    let uid = "5KdXI9ppcsdsmcDvgBWJ5UI4MCz1" // TODO: This is a temporary hardcoding
-    
     override init() {
         db = Firestore.firestore()
         let settings = db.settings
@@ -27,6 +25,10 @@ class ProfileDataHandler: NSObject {
     
     func getCurrentUserDictionary(onComplete: @escaping ([String: Any]) -> Void,
                                   onError:    @escaping () -> Void) {
+        guard let uid = Auth.auth().currentUser?.uid else {
+            onError()
+            return
+        }
         let docRef = membersRef.document(uid)
         docRef.getDocument(completion: { (doc, err) in
             if let doc = doc, doc.exists, let data = doc.data() {
@@ -53,8 +55,12 @@ class ProfileDataHandler: NSObject {
                 onError()
                 return
             }
+            guard let uid = Auth.auth().currentUser?.uid else {
+                onError()
+                return
+            }
             onComplete(User(bio: bio, majors: majors, name: name, teams: teams,
-                            title: title, uid: self.uid, year: year))
+                            title: title, uid: uid, year: year))
         }, onError: onError)
     }
 }

@@ -21,7 +21,7 @@ class UserProfileController: UIViewController {
         profileDataHandler.getCurrentUser(onComplete: { (obtainedUser) in
             self.user = obtainedUser
         }, onError: {
-            print("Could not obtained user data for current user\n")
+            print("Could not obtain user data for current user\n")
         })
     }
 }
