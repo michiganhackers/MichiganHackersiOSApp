@@ -6,4 +6,4 @@ Will most likely be used by core team to track things like...
 * Other core team members
 * Whatever!
 
-Feel free to contribute as well, or talk to me (Connor Svrcek) about ideas.
+Feel free to contribute as well, or talk to the iOS Core Team about ideas.
